@@ -1,0 +1,3 @@
+facebookとgmailのログインについては
+udemy-facebook-gmail-login
+が詳しい
