@@ -1,63 +1,22 @@
 //
 //  AppDelegate.swift
-//  udemy-facebook-gmail-login
+//  gmail-auto-login
 //
-//  Created by Takanori.H on 2017/04/05.
+//  Created by Takanori.H on 2017/04/07.
 //  Copyright © 2017年 Takanori.H. All rights reserved.
 //
 
 import UIKit
-import Firebase
-import FBSDKLoginKit
-
-
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    // コピペ
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
-        // コピペ
-        // print("App delegateが呼ばれました")
-        FIRApp.configure() //
-        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions) //
-        
-        /*
-        // コピペ
-        /*Firebaseにログインしていたら、次の画面に移動する。*/
-        if (FIRAuth.auth()?.currentUser) != nil {
-            
-            /*Firebaseにログインしていたら、次の画面に移動する。*/
-            
-            //windowを生成
-            self.window = UIWindow(frame: UIScreen.main.bounds)
-            //Storyboardを指定
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            //Viewcontrollerを指定
-            let initialViewController = storyboard.instantiateViewController(withIdentifier: "target")
-            //rootViewControllerに入れる
-            self.window?.rootViewController = initialViewController
-            // 表示
-            self.window?.makeKeyAndVisible()
- 
-            
-            
-        } else {
-            
-            
-        }*/
-                
+        // Override point for customization after application launch.
         return true
-    }
-    
-    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
-        
-        let handle = FBSDKApplicationDelegate.sharedInstance().application(app, open: url, sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as! String!, annotation: options[UIApplicationOpenURLOptionsKey.annotation])
-        
-        return handle
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -82,13 +41,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-    // 
-    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: AnyObject) -> Bool{
-        
-        return FBSDKApplicationDelegate.sharedInstance().application(application, open: url, sourceApplication: sourceApplication, annotation: annotation)
-        
-    }
-    
 
 }
 
