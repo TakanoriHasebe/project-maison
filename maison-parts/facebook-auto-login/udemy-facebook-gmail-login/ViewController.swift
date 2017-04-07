@@ -10,23 +10,90 @@ import UIKit
 import FBSDKLoginKit //
 import FBSDKCoreKit //
 import Firebase //
+import GoogleSignIn //
 
-class ViewController: UIViewController{
+class ViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate{
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // コピペ
+        // Googleログインボタンの作成
+        /*
+        let googleButton = GIDSignInButton()
+        googleButton.frame = CGRect(x: self.view.frame.size.width/10, y: self.view.frame.size.height/1.5, width: self.view.frame.size.width-(self.view.frame.size.width/10 + self.view.frame.size.width/10), height: self.view.frame.size.height / 15)
+        view.addSubview(googleButton)
+        */
+        
+        let googleButton = GIDSignInButton()
+        googleButton.frame = CGRect(x: self.view.frame.size.width/20, y: self.view.frame.size.height/1.5, width: self.view.frame.size.width, height: 100)
+        view.addSubview(googleButton)
+        
+        GIDSignIn.sharedInstance().uiDelegate = self
+        GIDSignIn.sharedInstance().clientID = FIRApp.defaultApp()?.options.clientID
+        GIDSignIn.sharedInstance().delegate = self
+        
         /*
         // コピペ
         // Facebookログインのボタンの作成
         let fbLoginButton = FBSDKLoginButton()
-        fbLoginButton.frame = CGRect(x: self.view.frame.size.width/10, y:self.view.frame.size.height/2, width: self.view.frame.size.width-(self.view.frame.size.width/10 + self.view.frame.size.width/10), height: 50)
+        fbLoginButton.frame = CGRect(x: self.view.frame.size.width/10, y:self.view.frame.size.height/1.8, width: self.view.frame.size.width-(self.view.frame.size.width/10 + self.view.frame.size.width/10), height: self.view.frame.size.height / 15)
         self.view.addSubview(fbLoginButton)
         */
         
     }
 
+    // コピペ
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        
+        if let err = error{
+            
+            print("エラーです。", err)
+            return
+        }
+        
+        print("成功しました")
+        
+        guard  let idToken = user.authentication.idToken else {
+            return
+        }
+        
+        guard let accessToken = user.authentication.accessToken else{
+            return
+        }
+        
+        let credential = FIRGoogleAuthProvider.credential(withIDToken: idToken, accessToken: accessToken)
+        
+        FIRAuth.auth()?.signIn(with: credential, completion: { (user,error) in
+            
+            if let err = error{
+                
+                print("エラーです。")
+                return
+            }
+            
+            print("成功")
+            
+            // 画面移動の際に必要になる。
+            self.performSegue(withIdentifier: "target", sender: nil)
+            
+        })
+        
+    }
+    
+    // ユーザーの情報を渡す
+    // コピペ
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if (segue.identifier == "target"){
+            
+            
+            
+        }
+        
+    }
+    
     /*
     // コピペ
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
