@@ -18,29 +18,21 @@ class ViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // コピペ
-        // Googleログインボタンの作成
-        /*
-        let googleButton = GIDSignInButton()
-        googleButton.frame = CGRect(x: self.view.frame.size.width/10, y: self.view.frame.size.height/1.5, width: self.view.frame.size.width-(self.view.frame.size.width/10 + self.view.frame.size.width/10), height: self.view.frame.size.height / 15)
-        view.addSubview(googleButton)
-        */
         
         let googleButton = GIDSignInButton()
-        googleButton.frame = CGRect(x: self.view.frame.size.width/20, y: self.view.frame.size.height/1.5, width: self.view.frame.size.width, height: 100)
+        googleButton.frame = CGRect(x: self.view.frame.size.width/10, y: self.view.frame.size.height/1.8, width: self.view.frame.size.width-(self.view.frame.size.width/10 + self.view.frame.size.width/10), height: self.view.frame.size.height / 15)
         view.addSubview(googleButton)
         
         GIDSignIn.sharedInstance().uiDelegate = self
         GIDSignIn.sharedInstance().clientID = FIRApp.defaultApp()?.options.clientID
         GIDSignIn.sharedInstance().delegate = self
         
-        /*
         // コピペ
         // Facebookログインのボタンの作成
         let fbLoginButton = FBSDKLoginButton()
-        fbLoginButton.frame = CGRect(x: self.view.frame.size.width/10, y:self.view.frame.size.height/1.8, width: self.view.frame.size.width-(self.view.frame.size.width/10 + self.view.frame.size.width/10), height: self.view.frame.size.height / 15)
+        fbLoginButton.frame = CGRect(x: self.view.frame.size.width/10, y:self.view.frame.size.height/1.5, width: self.view.frame.size.width-(self.view.frame.size.width/10 + self.view.frame.size.width/10), height: self.view.frame.size.height / 15)
         self.view.addSubview(fbLoginButton)
-        */
+        
         
     }
 
@@ -95,6 +87,7 @@ class ViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate{
     }
     
     /*
+    // Facebookログイン
     // コピペ
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
         
@@ -119,6 +112,7 @@ class ViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate{
     
     /*
     // コピペ
+    // Facebookログイン
     func FacebookBtnTapped(){
         
         let facebookLogin = FBSDKLoginManager()
