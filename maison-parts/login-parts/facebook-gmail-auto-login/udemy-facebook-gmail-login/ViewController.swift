@@ -104,7 +104,7 @@ class ViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate{
             
         }else if result.isCancelled{
             
-            
+        
             
         }else{
             
@@ -129,7 +129,7 @@ class ViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate{
                 print("Unable to authenticate - \(String(describing: error))")
             }else if result?.isCancelled == true{
                 print("User canceled Facebook authenticate")
-                // self.performSegue(withIdentifier: "next", sender: nil)
+                self.performSegue(withIdentifier: "next", sender: nil)
             }else{
                 
                 print("Successfully authenticated with Facebook")
