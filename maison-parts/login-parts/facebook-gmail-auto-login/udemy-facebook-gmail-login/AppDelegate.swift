@@ -9,6 +9,7 @@
 import UIKit
 import Firebase // コピペ
 import FBSDKLoginKit // コピペ
+import FBSDKCoreKit // コピペ
 import GoogleSignIn // コピペ
 
 // ,GIDSignInDelegate
@@ -123,6 +124,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         
     }
     
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        return FBSDKApplicationDelegate.sharedInstance().application(application, open: url, sourceApplication: sourceApplication, annotation: annotation)
+    }
 
 }
 

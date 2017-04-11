@@ -14,7 +14,7 @@ import GoogleSignIn //
 
 // GIDSignInDelegate, GIDSignInUIDelegate
 
-class ViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate{
+class ViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate, FBSDKLoginButtonDelegate{
 
     
     override func viewDidLoad() {
@@ -37,6 +37,8 @@ class ViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate{
         fbLoginButton.frame = CGRect(x: self.view.frame.size.width/10, y:self.view.frame.size.height/1.5, width: self.view.frame.size.width-(self.view.frame.size.width/10 + self.view.frame.size.width/10), height: self.view.frame.size.height / 15)
         self.view.addSubview(fbLoginButton)
         
+        // コピペ
+        fbLoginButton.delegate = self
         
     }
     
@@ -65,7 +67,7 @@ class ViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate{
         
         FIRAuth.auth()?.signIn(with: credential, completion: { (user,error) in
             
-            if let err = error{
+            if error != nil{
                 
                 print("エラーです。")
                 return
@@ -104,18 +106,29 @@ class ViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate{
             
         }else if result.isCancelled{
             
-        
+            
             
         }else{
             
-            // Facebookボタンがクリックされた時に関数を呼ぶ
-            self.FacebookBtnTapped()
+            // 取得
+            self.buttonTapped()
             
             
         }
         
     }
     
+    // Facebookログイン
+    // コピペ
+    func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
+        print("ログアウトしました")
+    }
+    
+    // Facebookログイン
+    // コピペ
+    func buttonTapped(){
+        performSegue(withIdentifier: "target", sender: nil)
+    }
     
     // コピペ
     // Facebookログイン
