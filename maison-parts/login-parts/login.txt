@@ -1,3 +1,4 @@
-facebookとgmailのログインについては
-udemy-facebook-gmail-login
-が詳しい
+Firebaseを用いたGoogleログインとFacebookログインについては
+https://github.com/TakanoriHasebe/CheatSheet/tree/master/Swift
+のSwiftGoogleLoginとSwiftFacebookLoginが詳しい。
+
