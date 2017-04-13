@@ -8,13 +8,28 @@
 
 import UIKit
 import FBSDKLoginKit
+import Firebase
+import GoogleSignIn
 
-class ViewController: UIViewController, FBSDKLoginButtonDelegate {
+class ViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupFacebookButton()
+        
+        setupGoogleButton()
+        
+    }
+    
+    fileprivate func setupGoogleButton(){
+        
+        // コピペ③
+        let googleButton = GIDSignInButton()
+        googleButton.frame = CGRect(x: self.view.frame.size.width/10, y: 100, width: self.view.frame.size.width-(self.view.frame.size.width/10 + self.view.frame.size.width/10), height: self.view.frame.size.height / 15)
+        self.view.addSubview(googleButton)
+        
+        GIDSignIn.sharedInstance().uiDelegate = self
         
     }
 
@@ -27,8 +42,8 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         self.view.addSubview(fbLoginButton)
         
         // コピペ①
-        // fbLoginButton.delegate = self
-        // fbLoginButton.readPermissions = ["email"]
+        fbLoginButton.delegate = self
+        fbLoginButton.readPermissions = ["email"]
         
     }
     
@@ -53,9 +68,41 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         }else{
             
             print("ログインしました")
-            // self.showEmailAddress()
+            self.showEmailAddress()
             
         }
+        
+    }
+    
+    // ①, ②
+    // id, name, emailを取得する
+    func showEmailAddress(){
+        
+        let accessToken = FBSDKAccessToken.current()
+        guard let accessTokenString = accessToken?.tokenString else{ return }
+        
+        let credentials = FIRFacebookAuthProvider.credential(withAccessToken: accessTokenString)
+        FIRAuth.auth()?.signIn(with: credentials, completion:{ (user, error) in
+            if error != nil{
+                print("Firebaseでエラーが発生しています。")
+                print(error ?? "")
+                return
+            }
+            
+            print("Firebaseのログインに成功しました。")
+            print(user ?? "")
+        })
+        
+        FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "name, id, email"]).start { (connection, result, err) in
+            if err != nil{
+                print("Failed to start graph request:", err!)
+                return
+            }
+            
+            print(result!)
+            
+        }
+        
         
     }
     
