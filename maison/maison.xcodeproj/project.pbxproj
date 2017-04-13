@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6F66DC4AFD6B6DC15025A0E2 /* Pods_maison.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF63B2F69B893E2CFCCE4F7 /* Pods_maison.framework */; };
-		F338315D1E9F638A001C0A4B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F338315C1E9F638A001C0A4B /* GoogleService-Info.plist */; };
+		F37AC7CE1E9F7C3A00252566 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F37AC7CD1E9F7C3A00252566 /* GoogleService-Info.plist */; };
 		F3FB60251E9F41D400CC5736 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FB60241E9F41D400CC5736 /* AppDelegate.swift */; };
 		F3FB60271E9F41D400CC5736 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FB60261E9F41D400CC5736 /* ViewController.swift */; };
 		F3FB602A1E9F41D400CC5736 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3FB60281E9F41D400CC5736 /* Main.storyboard */; };
@@ -20,7 +20,7 @@
 		4A1AC6FB8835A032BD2C14BB /* Pods-maison.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maison.release.xcconfig"; path = "Pods/Target Support Files/Pods-maison/Pods-maison.release.xcconfig"; sourceTree = "<group>"; };
 		4CF63B2F69B893E2CFCCE4F7 /* Pods_maison.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_maison.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F338315B1E9F60AB001C0A4B /* maison.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = maison.entitlements; sourceTree = "<group>"; };
-		F338315C1E9F638A001C0A4B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F37AC7CD1E9F7C3A00252566 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F3FB60211E9F41D400CC5736 /* maison.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = maison.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3FB60241E9F41D400CC5736 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3FB60261E9F41D400CC5736 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,7 +88,7 @@
 				F3FB602B1E9F41D400CC5736 /* Assets.xcassets */,
 				F3FB602D1E9F41D400CC5736 /* LaunchScreen.storyboard */,
 				F3FB60301E9F41D400CC5736 /* Info.plist */,
-				F338315C1E9F638A001C0A4B /* GoogleService-Info.plist */,
+				F37AC7CD1E9F7C3A00252566 /* GoogleService-Info.plist */,
 			);
 			path = maison;
 			sourceTree = "<group>";
@@ -161,10 +161,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F37AC7CE1E9F7C3A00252566 /* GoogleService-Info.plist in Resources */,
 				F3FB602F1E9F41D400CC5736 /* LaunchScreen.storyboard in Resources */,
 				F3FB602C1E9F41D400CC5736 /* Assets.xcassets in Resources */,
 				F3FB602A1E9F41D400CC5736 /* Main.storyboard in Resources */,
-				F338315D1E9F638A001C0A4B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
