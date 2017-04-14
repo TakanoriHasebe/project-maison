@@ -26,7 +26,8 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDel
         
         // コピペ③
         let googleButton = GIDSignInButton()
-        googleButton.frame = CGRect(x: self.view.frame.size.width/10, y: 100, width: self.view.frame.size.width-(self.view.frame.size.width/10 + self.view.frame.size.width/10), height: self.view.frame.size.height / 15)
+        /*googleButton.frame = CGRect(x: self.view.frame.size.width/10, y: 100, width: self.view.frame.size.width-(self.view.frame.size.width/10 + self.view.frame.size.width/10), height: self.view.frame.size.height / 15)*/
+        googleButton.frame = CGRect(x:((self.view.bounds.width-320)/2),y:400,width:320,height:50)
         self.view.addSubview(googleButton)
         
         GIDSignIn.sharedInstance().uiDelegate = self
@@ -38,7 +39,8 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDel
         // コピペ①
         // Facebookログインのボタンの作成
         let fbLoginButton = FBSDKLoginButton()
-        fbLoginButton.frame = CGRect(x: self.view.frame.size.width/10, y:self.view.frame.size.height/1.5, width: self.view.frame.size.width-(self.view.frame.size.width/10 + self.view.frame.size.width/10), height: self.view.frame.size.height / 15)
+        /*fbLoginButton.frame = CGRect(x: self.view.frame.size.width/10, y:self.view.frame.size.height/1.5, width: self.view.frame.size.width-(self.view.frame.size.width/10 + self.view.frame.size.width/10), height: self.view.frame.size.height / 15)*/
+        fbLoginButton.frame = CGRect(x:((self.view.bounds.width-314)/2),y:465,width:314,height:40)
         self.view.addSubview(fbLoginButton)
         
         // コピペ①

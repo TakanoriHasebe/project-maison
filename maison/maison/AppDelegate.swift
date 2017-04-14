@@ -29,6 +29,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         // ①
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
+        /*
+        // コピペ
+        /*Firebaseにログインしていたら、次の画面に移動する。*/
+        if (FIRAuth.auth()?.currentUser) != nil {
+         
+        /*Firebaseにログインしていたら、次の画面に移動する。*/
+         
+        //windowを生成
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        //Storyboardを指定
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        //Viewcontrollerを指定
+        let initialViewController = storyboard.instantiateViewController(withIdentifier: "target")
+        //rootViewControllerに入れる
+        self.window?.rootViewController = initialViewController
+        // 表示
+        self.window?.makeKeyAndVisible()
+         
+         
+         
+        } else {
+         
+         
+        }*/
+        
         return true
     }
     
