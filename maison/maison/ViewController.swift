@@ -16,11 +16,13 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDel
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupFacebookButton()
+        // setupFacebookButton()
         
-        setupGoogleButton()
+        // setupGoogleButton()
         
     }
+    
+    
     
     fileprivate func setupGoogleButton(){
         
@@ -33,7 +35,27 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDel
         GIDSignIn.sharedInstance().uiDelegate = self
         
     }
-
+    
+    
+    @IBAction func facebookBtnTapped(_ sender: AnyObject) {
+        
+        let facebookLogin = FBSDKLoginManager()
+        
+        facebookLogin.logIn(withReadPermissions: ["email"], from: self) { (result, error) in
+            if error != nil{
+                print("Facebookログインに失敗しました。")
+            }else if result?.isCancelled == true{
+                print("Facebookログインをキャンセルしました。")
+            }else{
+                print("Facebookログインに成功しました。")
+                self.showEmailAddress()
+            }
+        }
+        
+        
+    }
+    
+    /*
     fileprivate func setupFacebookButton(){
         
         // コピペ①
@@ -47,7 +69,9 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDel
         fbLoginButton.delegate = self
         fbLoginButton.readPermissions = ["email"]
         
-    }
+    }*/
+    
+    
     
     // ①
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
