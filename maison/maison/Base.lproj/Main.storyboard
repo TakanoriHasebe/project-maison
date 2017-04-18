@@ -45,6 +45,9 @@
                                     <constraint firstAttribute="width" secondItem="DfB-aV-tiP" secondAttribute="height" multiplier="326:53" id="gOh-pT-Ha8"/>
                                 </constraints>
                                 <state key="normal" image="Google_Login_4"/>
+                                <connections>
+                                    <action selector="googleBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QMy-Io-Ig4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

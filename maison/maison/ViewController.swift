@@ -11,7 +11,9 @@ import FBSDKLoginKit
 import Firebase
 import GoogleSignIn
 
-class ViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDelegate {
+class ViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDelegate, GIDSignInDelegate {
+    
+    @IBOutlet weak var googleBtnTapped: GIDSignInButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,10 +22,34 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDel
         
         // setupGoogleButton()
         
+        // Google
+        GIDSignIn.sharedInstance().clientID = FIRApp.defaultApp()?.options.clientID
+        GIDSignIn.sharedInstance().delegate = self
+        GIDSignIn.sharedInstance().uiDelegate = self
+        
+        
     }
     
+    /*
+    //ログインが成功した場合
+    func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!,
+                withError error: NSError!) {
+        print("Google Sing In didSignInForUser")
+        
+        
+        
+        if let error = error {
+            print(error.localizedDescription)
+            return
+        }
+        let authentication = user.authentication
+        let credential = FIRGoogleAuthProvider.credential(withIDToken: (authentication?.idToken)!,accessToken: (authentication?.accessToken)!)
+        //ユーザ登録後の処理....
+        
+    }*/
     
     
+    /*
     fileprivate func setupGoogleButton(){
         
         // コピペ③
@@ -34,7 +60,44 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDel
         
         GIDSignIn.sharedInstance().uiDelegate = self
         
+    }*/
+    
+    // Google
+    @IBAction func googleBtnTapped(_ sender: AnyObject) {
+        
+        // GIDSignIn.sharedInstance().uiDelegate = self
+        GIDSignIn.sharedInstance().signIn()
+        print("Googleボタンが押されました")
+        
     }
+    
+    // Google
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        
+        print("Googleログインに成功しました。")
+        if let error = error {
+            print(error.localizedDescription)
+            return
+        }
+        let authentication = user.authentication
+        let credential = FIRGoogleAuthProvider.credential(withIDToken: (authentication?.idToken)!,accessToken: (authentication?.accessToken)!)
+        //ユーザ登録後の処理....
+        
+        self.performSegue(withIdentifier: "target", sender: nil)
+        
+    }
+    
+    // Google
+    //ログインがキャンセル・失敗した場合
+    func signIn(signIn: GIDSignIn!, didDisconnectWithUser user:GIDGoogleUser!,
+                withError error: NSError!) {
+        print("Googleログインに失敗しました。")
+        // Perform any operations when the user disconnects from app here.
+        // ...
+    }
+    
+    
+    
     
     
     
@@ -56,6 +119,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDel
             }else{
                 print("Facebookログインに成功しました。")
                 self.showEmailAddress()
+                self.performSegue(withIdentifier: "target", sender: nil)
             }
         }
         
