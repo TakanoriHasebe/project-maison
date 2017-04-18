@@ -37,6 +37,13 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDel
     }
     
     
+    
+    
+    
+    
+    
+    
+    // Facebook
     @IBAction func facebookBtnTapped(_ sender: AnyObject) {
         
         let facebookLogin = FBSDKLoginManager()
@@ -74,11 +81,13 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDel
     
     
     // ①
+    // Facebook
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
         print("ログアウトしました")
     }
     
     // ①
+    // Facebook
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
         
         if error != nil{
@@ -101,6 +110,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDel
     }
     
     // ①, ②
+    // Facebook
     // id, name, emailを取得する
     func showEmailAddress(){
         

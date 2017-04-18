@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,20 +22,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="normal" translatesAutoresizingMaskIntoConstraints="NO" id="567-hE-b56">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="296"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login-image" translatesAutoresizingMaskIntoConstraints="NO" id="dFy-Fd-g2m">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAR-f5-eCc">
-                                <rect key="frame" x="59" y="380" width="256" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Facebook_Btn"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAR-f5-eCc">
+                                <rect key="frame" x="24" y="540" width="326" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="326" id="A81-uV-0mQ"/>
+                                    <constraint firstAttribute="height" constant="53" id="QWd-RS-Z3Q"/>
+                                    <constraint firstAttribute="width" secondItem="YAR-f5-eCc" secondAttribute="height" multiplier="326:53" id="hvc-78-c41"/>
+                                </constraints>
+                                <state key="normal" image="Facebook_Btn_4"/>
                                 <connections>
                                     <action selector="facebookBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9pH-Kl-1u5"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DfB-aV-tiP">
+                                <rect key="frame" x="24" y="477" width="326" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="326" id="S0j-YF-4OK"/>
+                                    <constraint firstAttribute="height" constant="53" id="UsZ-wN-2Rj"/>
+                                    <constraint firstAttribute="width" secondItem="DfB-aV-tiP" secondAttribute="height" multiplier="326:53" id="gOh-pT-Ha8"/>
+                                </constraints>
+                                <state key="normal" image="Google_Login_4"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="dFy-Fd-g2m" secondAttribute="trailing" id="IeB-XL-jDX"/>
+                            <constraint firstItem="YAR-f5-eCc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MOW-Io-2RU"/>
+                            <constraint firstItem="DfB-aV-tiP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S2Y-Bm-EKb"/>
+                            <constraint firstItem="dFy-Fd-g2m" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fa8-OT-rFe"/>
+                            <constraint firstItem="DfB-aV-tiP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="457" id="gco-zH-gM0"/>
+                            <constraint firstItem="YAR-f5-eCc" firstAttribute="top" secondItem="DfB-aV-tiP" secondAttribute="bottom" constant="10" id="ijt-Am-7A8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dFy-Fd-g2m" secondAttribute="bottom" id="kii-QD-h0C"/>
+                            <constraint firstItem="dFy-Fd-g2m" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="law-Cg-fjr"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="g5f-T1-45G" kind="presentation" identifier="target" id="B2v-bq-aSg"/>
@@ -73,7 +96,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Facebook_Btn" width="1280" height="240"/>
-        <image name="normal" width="1040" height="1526"/>
+        <image name="Facebook_Btn_4" width="1316" height="212"/>
+        <image name="Google_Login_4" width="1316" height="212"/>
+        <image name="login-image" width="564" height="846"/>
     </resources>
 </document>
