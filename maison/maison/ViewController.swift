@@ -30,26 +30,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDel
         
     }
     
-    /*
-    //ログインが成功した場合
-    func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!,
-                withError error: NSError!) {
-        print("Google Sing In didSignInForUser")
-        
-        
-        
-        if let error = error {
-            print(error.localizedDescription)
-            return
-        }
-        let authentication = user.authentication
-        let credential = FIRGoogleAuthProvider.credential(withIDToken: (authentication?.idToken)!,accessToken: (authentication?.accessToken)!)
-        //ユーザ登録後の処理....
-        
-    }*/
     
-    
-    /*
     fileprivate func setupGoogleButton(){
         
         // コピペ③
@@ -60,7 +41,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDel
         
         GIDSignIn.sharedInstance().uiDelegate = self
         
-    }*/
+    }
     
     // Google
     @IBAction func googleBtnTapped(_ sender: AnyObject) {
