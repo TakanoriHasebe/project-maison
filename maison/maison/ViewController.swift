@@ -23,14 +23,15 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDel
         // setupGoogleButton()
         
         // Google
+        GIDSignIn.sharedInstance().uiDelegate = self
         GIDSignIn.sharedInstance().clientID = FIRApp.defaultApp()?.options.clientID
         GIDSignIn.sharedInstance().delegate = self
-        GIDSignIn.sharedInstance().uiDelegate = self
         
         
     }
     
-    
+    /*
+    // Googleの元から用意されていたボタン
     fileprivate func setupGoogleButton(){
         
         // コピペ③
@@ -41,7 +42,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDel
         
         GIDSignIn.sharedInstance().uiDelegate = self
         
-    }
+    }*/
     
     // Google
     @IBAction func googleBtnTapped(_ sender: AnyObject) {
@@ -52,39 +53,44 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDel
         
     }
     
-    // Google
+    // コピペ
+    // GoogleSignIn
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         
-        print("Googleログインに成功しました。")
-        if let error = error {
-            print(error.localizedDescription)
+        if let err = error{
+            
+            print("エラーです。", err)
             return
         }
-        let authentication = user.authentication
-        let credential = FIRGoogleAuthProvider.credential(withIDToken: (authentication?.idToken)!,accessToken: (authentication?.accessToken)!)
-        //ユーザ登録後の処理....
         
-        self.performSegue(withIdentifier: "target", sender: nil)
+        print("成功しました")
+        
+        guard  let idToken = user.authentication.idToken else {
+            return
+        }
+        
+        guard let accessToken = user.authentication.accessToken else{
+            return
+        }
+        
+        let credential = FIRGoogleAuthProvider.credential(withIDToken: idToken, accessToken: accessToken)
+        
+        FIRAuth.auth()?.signIn(with: credential, completion: { (user,error) in
+            
+            if error != nil{
+                
+                print("エラーです。")
+                return
+            }
+            
+            print("成功")
+            
+            // 画面移動の際に必要になる。
+            self.performSegue(withIdentifier: "target", sender: nil)
+            
+        })
         
     }
-    
-    // Google
-    //ログインがキャンセル・失敗した場合
-    func signIn(signIn: GIDSignIn!, didDisconnectWithUser user:GIDGoogleUser!,
-                withError error: NSError!) {
-        print("Googleログインに失敗しました。")
-        // Perform any operations when the user disconnects from app here.
-        // ...
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     // Facebook
