@@ -53,6 +53,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="kWf-Qv-6J7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyz-kl-gqx">
                                 <rect key="frame" x="20" y="40" width="19" height="18"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -71,9 +74,13 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="kWf-Qv-6J7" secondAttribute="trailing" id="0LR-Ky-qaF"/>
                             <constraint firstItem="un7-Rm-vC6" firstAttribute="centerY" secondItem="ue3-wc-p0m" secondAttribute="centerY" id="0gB-zp-kPC"/>
+                            <constraint firstItem="UwV-Us-1zO" firstAttribute="top" secondItem="kWf-Qv-6J7" secondAttribute="bottom" id="0uH-Nh-IIt"/>
                             <constraint firstItem="cyz-kl-gqx" firstAttribute="top" secondItem="ue3-wc-p0m" secondAttribute="top" constant="40" id="6xO-Vl-WPY"/>
+                            <constraint firstItem="kWf-Qv-6J7" firstAttribute="leading" secondItem="ue3-wc-p0m" secondAttribute="leading" id="FR6-2N-Ulb"/>
                             <constraint firstItem="cyz-kl-gqx" firstAttribute="leading" secondItem="ue3-wc-p0m" secondAttribute="leading" constant="20" id="MMm-Ze-u3p"/>
+                            <constraint firstItem="kWf-Qv-6J7" firstAttribute="top" secondItem="ue3-wc-p0m" secondAttribute="top" id="mOq-o3-N5Z"/>
                             <constraint firstItem="un7-Rm-vC6" firstAttribute="centerX" secondItem="ue3-wc-p0m" secondAttribute="centerX" id="qrP-wd-9xo"/>
                         </constraints>
                     </view>
@@ -82,7 +89,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HIV-AQ-SdH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1367" y="-771"/>
+            <point key="canvasLocation" x="1365.5999999999999" y="-771.36431784107947"/>
         </scene>
         <!--Next View Controller-->
         <scene sceneID="Oig-Ye-XsU">
@@ -96,7 +103,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Qem-NH-0KK">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="Qem-NH-0KK">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n97-Ks-t0e">
@@ -144,7 +151,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="p2O-ew-VYG">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="p2O-ew-VYG">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Controller 3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aq0-kb-BLp">
@@ -200,7 +207,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="LCs-br-FFf">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="LCs-br-FFf">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygv-lw-7Bn">
@@ -239,7 +246,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="TIc-ET-cxk">
             <objects>
-                <tabBarController storyboardIdentifier="target" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="c3F-M1-vah" customClass="TabBarController" customModule="FrostedSidebar" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="target" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="c3F-M1-vah" customClass="TabBarController" customModule="SwiftGitTrans" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="lRG-Bv-88d">
@@ -260,7 +267,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Background.jpg" width="16" height="16"/>
+        <image name="Background" width="63" height="111"/>
         <image name="burger" width="19" height="17"/>
     </resources>
 </document>
