@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         // ①
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
-        /*
+        
         // コピペ
         /*Firebaseにログインしていたら、次の画面に移動する。*/
         if (FIRAuth.auth()?.currentUser) != nil {
@@ -52,7 +52,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         } else {
          
          
-        }*/
+        }
         
         return true
     }
