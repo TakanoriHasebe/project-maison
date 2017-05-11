@@ -38,19 +38,27 @@ extension MapConfirmViewController: CLLocationManagerDelegate {
             break
         case .denied:
             print("ローケーションサービスの設定が「無効」になっています (ユーザーによって、明示的に拒否されています）")
+            let target = storyboard!.instantiateViewController(withIdentifier: "target")
+            self.present(target,animated: false, completion: nil)
             // 「設定 > プライバシー > 位置情報サービス で、位置情報サービスの利用を許可して下さい」を表示する
-            self.performSegue(withIdentifier: "target", sender: nil)
+            // self.performSegue(withIdentifier: "target", sender: nil)
             break
         case .restricted:
             print("このアプリケーションは位置情報サービスを使用できません(ユーザによって拒否されたわけではありません)")
+            let target = storyboard!.instantiateViewController(withIdentifier: "target")
+            self.present(target,animated: false, completion: nil)
             // 「このアプリは、位置情報を取得できないために、正常に動作できません」を表示する
             break
         case .authorizedAlways:
             print("常時、位置情報の取得が許可されています。")
+            let target = storyboard!.instantiateViewController(withIdentifier: "target")
+            self.present(target,animated: false, completion: nil)
             // 位置情報取得の開始処理
             break
         case .authorizedWhenInUse:
             print("起動時のみ、位置情報の取得が許可されています。")
+            let target = storyboard!.instantiateViewController(withIdentifier: "target")
+            self.present(target,animated: false, completion: nil)
             // 位置情報取得の開始処理
             break
         }

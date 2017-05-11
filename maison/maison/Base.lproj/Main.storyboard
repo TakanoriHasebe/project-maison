@@ -82,7 +82,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MapConfirmBackgground" translatesAutoresizingMaskIntoConstraints="NO" id="zcq-za-cwU">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MapBackGround" translatesAutoresizingMaskIntoConstraints="NO" id="zcq-za-cwU">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                         </subviews>
@@ -130,7 +130,7 @@
     <resources>
         <image name="Facebook_Btn_4" width="1316" height="212"/>
         <image name="Google_Login_4" width="1316" height="212"/>
-        <image name="MapConfirmBackgground" width="750" height="1334"/>
+        <image name="MapBackGround" width="500" height="750"/>
         <image name="login-image" width="564" height="846"/>
     </resources>
 </document>
