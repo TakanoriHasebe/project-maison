@@ -30,20 +30,6 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDel
         
     }
     
-    /*
-    // Googleの元から用意されていたボタン
-    fileprivate func setupGoogleButton(){
-        
-        // コピペ③
-        let googleButton = GIDSignInButton()
-        /*googleButton.frame = CGRect(x: self.view.frame.size.width/10, y: 100, width: self.view.frame.size.width-(self.view.frame.size.width/10 + self.view.frame.size.width/10), height: self.view.frame.size.height / 15)*/
-        googleButton.frame = CGRect(x:((self.view.bounds.width-320)/2),y:400,width:320,height:50)
-        self.view.addSubview(googleButton)
-        
-        GIDSignIn.sharedInstance().uiDelegate = self
-        
-    }*/
-    
     // Google
     @IBAction func googleBtnTapped(_ sender: AnyObject) {
         
@@ -86,7 +72,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDel
             print("成功")
             
             // 画面移動の際に必要になる。
-            self.performSegue(withIdentifier: "target", sender: nil)
+            self.performSegue(withIdentifier: "MapConfirm", sender: nil)
             
         })
         
@@ -106,30 +92,12 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDel
             }else{
                 print("Facebookログインに成功しました。")
                 self.showEmailAddress()
-                self.performSegue(withIdentifier: "target", sender: nil)
+                self.performSegue(withIdentifier: "MapConfirm", sender: nil)
             }
         }
         
         
     }
-    
-    /*
-    fileprivate func setupFacebookButton(){
-        
-        // コピペ①
-        // Facebookログインのボタンの作成
-        let fbLoginButton = FBSDKLoginButton()
-        /*fbLoginButton.frame = CGRect(x: self.view.frame.size.width/10, y:self.view.frame.size.height/1.5, width: self.view.frame.size.width-(self.view.frame.size.width/10 + self.view.frame.size.width/10), height: self.view.frame.size.height / 15)*/
-        fbLoginButton.frame = CGRect(x:((self.view.bounds.width-314)/2),y:465,width:314,height:40)
-        self.view.addSubview(fbLoginButton)
-        
-        // コピペ①
-        fbLoginButton.delegate = self
-        fbLoginButton.readPermissions = ["email"]
-        
-    }*/
-    
-    
     
     // ①
     // Facebook
