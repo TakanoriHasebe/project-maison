@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F3751E741EC96AC00055012F /* FrostedProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3751E731EC96AC00055012F /* FrostedProfileViewController.swift */; };
+		F3751E761EC96B8C0055012F /* FrostedMaisonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3751E751EC96B8C0055012F /* FrostedMaisonViewController.swift */; };
+		F3751E781EC96C200055012F /* FrostedRecommendPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3751E771EC96C200055012F /* FrostedRecommendPersonViewController.swift */; };
+		F3751E7A1EC96C500055012F /* FrostedMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3751E791EC96C500055012F /* FrostedMapViewController.swift */; };
+		F3751E7C1EC96CA40055012F /* FrostedSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3751E7B1EC96CA40055012F /* FrostedSettingViewController.swift */; };
 		F38DEA901EC058D4006CE77A /* FrostedSidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38DEA8F1EC058D4006CE77A /* FrostedSidebar.swift */; };
 		F38DEA921EC0598C006CE77A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38DEA911EC0598C006CE77A /* TabBarController.swift */; };
-		F38DEA941EC05A39006CE77A /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38DEA931EC05A39006CE77A /* NextViewController.swift */; };
 		F3AF84E11EC04F8300E07A33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AF84E01EC04F8300E07A33 /* AppDelegate.swift */; };
 		F3AF84E31EC04F8300E07A33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AF84E21EC04F8300E07A33 /* ViewController.swift */; };
 		F3AF84E61EC04F8300E07A33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3AF84E41EC04F8300E07A33 /* Main.storyboard */; };
@@ -18,9 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F3751E731EC96AC00055012F /* FrostedProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrostedProfileViewController.swift; sourceTree = "<group>"; };
+		F3751E751EC96B8C0055012F /* FrostedMaisonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrostedMaisonViewController.swift; sourceTree = "<group>"; };
+		F3751E771EC96C200055012F /* FrostedRecommendPersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrostedRecommendPersonViewController.swift; sourceTree = "<group>"; };
+		F3751E791EC96C500055012F /* FrostedMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrostedMapViewController.swift; sourceTree = "<group>"; };
+		F3751E7B1EC96CA40055012F /* FrostedSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrostedSettingViewController.swift; sourceTree = "<group>"; };
 		F38DEA8F1EC058D4006CE77A /* FrostedSidebar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrostedSidebar.swift; sourceTree = "<group>"; };
 		F38DEA911EC0598C006CE77A /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		F38DEA931EC05A39006CE77A /* NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 		F3AF84DD1EC04F8300E07A33 /* SwiftGitTrans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftGitTrans.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3AF84E01EC04F8300E07A33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3AF84E21EC04F8300E07A33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,11 +49,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F3751E7D1EC96F5D0055012F /* FrostedSideBarSetting */ = {
+			isa = PBXGroup;
+			children = (
+				F38DEA911EC0598C006CE77A /* TabBarController.swift */,
+			);
+			name = FrostedSideBarSetting;
+			sourceTree = "<group>";
+		};
+		F3751E7F1EC96FF00055012F /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				F3AF84DF1EC04F8300E07A33 /* SwiftGitTrans */,
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		F3751E801EC9701D0055012F /* FrostedMaison */ = {
+			isa = PBXGroup;
+			children = (
+				F3751E751EC96B8C0055012F /* FrostedMaisonViewController.swift */,
+			);
+			name = FrostedMaison;
+			sourceTree = "<group>";
+		};
+		F3751E811EC970280055012F /* FrostedProfile */ = {
+			isa = PBXGroup;
+			children = (
+				F3751E731EC96AC00055012F /* FrostedProfileViewController.swift */,
+			);
+			name = FrostedProfile;
+			sourceTree = "<group>";
+		};
+		F3751E821EC970310055012F /* FrostedRecommendPerson */ = {
+			isa = PBXGroup;
+			children = (
+				F3751E771EC96C200055012F /* FrostedRecommendPersonViewController.swift */,
+			);
+			name = FrostedRecommendPerson;
+			sourceTree = "<group>";
+		};
+		F3751E831EC970400055012F /* FrostedMap */ = {
+			isa = PBXGroup;
+			children = (
+				F3751E791EC96C500055012F /* FrostedMapViewController.swift */,
+			);
+			name = FrostedMap;
+			sourceTree = "<group>";
+		};
+		F3751E841EC9704D0055012F /* FrostedSetting */ = {
+			isa = PBXGroup;
+			children = (
+				F3751E7B1EC96CA40055012F /* FrostedSettingViewController.swift */,
+			);
+			name = FrostedSetting;
+			sourceTree = "<group>";
+		};
 		F3AF84D41EC04F8300E07A33 = {
 			isa = PBXGroup;
 			children = (
 				F38DEA8F1EC058D4006CE77A /* FrostedSidebar.swift */,
-				F3AF84DF1EC04F8300E07A33 /* SwiftGitTrans */,
+				F3751E7F1EC96FF00055012F /* New Group */,
 				F3AF84DE1EC04F8300E07A33 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,9 +125,13 @@
 		F3AF84DF1EC04F8300E07A33 /* SwiftGitTrans */ = {
 			isa = PBXGroup;
 			children = (
-				F38DEA911EC0598C006CE77A /* TabBarController.swift */,
+				F3751E801EC9701D0055012F /* FrostedMaison */,
+				F3751E811EC970280055012F /* FrostedProfile */,
+				F3751E821EC970310055012F /* FrostedRecommendPerson */,
+				F3751E831EC970400055012F /* FrostedMap */,
+				F3751E841EC9704D0055012F /* FrostedSetting */,
+				F3751E7D1EC96F5D0055012F /* FrostedSideBarSetting */,
 				F3AF84E01EC04F8300E07A33 /* AppDelegate.swift */,
-				F38DEA931EC05A39006CE77A /* NextViewController.swift */,
 				F3AF84E21EC04F8300E07A33 /* ViewController.swift */,
 				F3AF84E41EC04F8300E07A33 /* Main.storyboard */,
 				F3AF84E71EC04F8300E07A33 /* Assets.xcassets */,
@@ -146,11 +214,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F38DEA941EC05A39006CE77A /* NextViewController.swift in Sources */,
 				F38DEA901EC058D4006CE77A /* FrostedSidebar.swift in Sources */,
+				F3751E7A1EC96C500055012F /* FrostedMapViewController.swift in Sources */,
 				F3AF84E31EC04F8300E07A33 /* ViewController.swift in Sources */,
+				F3751E761EC96B8C0055012F /* FrostedMaisonViewController.swift in Sources */,
+				F3751E781EC96C200055012F /* FrostedRecommendPersonViewController.swift in Sources */,
 				F38DEA921EC0598C006CE77A /* TabBarController.swift in Sources */,
+				F3751E741EC96AC00055012F /* FrostedProfileViewController.swift in Sources */,
 				F3AF84E11EC04F8300E07A33 /* AppDelegate.swift in Sources */,
+				F3751E7C1EC96CA40055012F /* FrostedSettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -27,11 +27,11 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
 			UIImage(named: "gear")!
             ],
 			colors: [
-				UIColor(red: 240/255, green: 159/255, blue: 254/255, alpha: 1),
-				UIColor(red: 255/255, green: 137/255, blue: 167/255, alpha: 1),
-				UIColor(red: 126/255, green: 242/255, blue: 195/255, alpha: 1),
-				UIColor(red: 126/255, green: 242/255, blue: 195/255, alpha: 1),
-				UIColor(red: 126/255, green: 242/255, blue: 195/255, alpha: 1)
+                UIColor(red: 240/255, green: 159/255, blue: 254/255, alpha: 1),
+                UIColor(red: 159/255, green: 254/255, blue: 240/255, alpha: 1),
+                UIColor(red: 254/255, green: 159/255, blue: 221/255, alpha: 1),
+                UIColor(red: 173/255, green: 254/255, blue: 159/255, alpha: 1),
+                UIColor(red: 159/255, green: 173/255, blue: 254/255, alpha: 1)
                 ],
 			selectionStyle: .single)
 		sidebar.actionForIndex = [

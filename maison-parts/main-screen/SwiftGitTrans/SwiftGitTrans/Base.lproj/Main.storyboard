@@ -12,6 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftGitTrans" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
@@ -36,14 +37,13 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-526" y="107"/>
         </scene>
         <!--Item-->
         <scene sceneID="7gN-fB-Rgm">
             <objects>
-                <viewController id="lIR-Pt-bk7" customClass="NextViewController" customModule="SwiftGitTrans" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lIR-Pt-bk7" customClass="FrostedMaisonViewController" customModule="SwiftGitTrans" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XGD-fP-Mlg"/>
                         <viewControllerLayoutGuide type="bottom" id="UwV-Us-1zO"/>
@@ -52,9 +52,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="kWf-Qv-6J7">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyz-kl-gqx">
                                 <rect key="frame" x="20" y="40" width="19" height="18"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -63,37 +60,50 @@
                                     <action selector="onBurger" destination="lIR-Pt-bk7" eventType="touchUpInside" id="7KY-Gy-sBW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="un7-Rm-vC6">
-                                <rect key="frame" x="122.5" y="316.5" width="129" height="33"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="View Controller 1">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w69-vR-nJ7">
+                                <rect key="frame" x="0.0" y="158" width="375" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VsO-se-RWJ">
+                                <rect key="frame" x="225" y="296" width="74" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="plus"/>
+                                <connections>
+                                    <action selector="plus:" destination="lIR-Pt-bk7" eventType="touchUpInside" id="KRU-NC-asQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGV-zE-QzG">
+                                <rect key="frame" x="77" y="296" width="74" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="minus"/>
+                                <connections>
+                                    <action selector="minus:" destination="lIR-Pt-bk7" eventType="touchUpInside" id="Vml-n1-8R7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="kWf-Qv-6J7" secondAttribute="trailing" id="0LR-Ky-qaF"/>
-                            <constraint firstItem="un7-Rm-vC6" firstAttribute="centerY" secondItem="ue3-wc-p0m" secondAttribute="centerY" id="0gB-zp-kPC"/>
-                            <constraint firstItem="UwV-Us-1zO" firstAttribute="top" secondItem="kWf-Qv-6J7" secondAttribute="bottom" id="0uH-Nh-IIt"/>
                             <constraint firstItem="cyz-kl-gqx" firstAttribute="top" secondItem="ue3-wc-p0m" secondAttribute="top" constant="40" id="6xO-Vl-WPY"/>
-                            <constraint firstItem="kWf-Qv-6J7" firstAttribute="leading" secondItem="ue3-wc-p0m" secondAttribute="leading" id="FR6-2N-Ulb"/>
                             <constraint firstItem="cyz-kl-gqx" firstAttribute="leading" secondItem="ue3-wc-p0m" secondAttribute="leading" constant="20" id="MMm-Ze-u3p"/>
-                            <constraint firstItem="kWf-Qv-6J7" firstAttribute="top" secondItem="ue3-wc-p0m" secondAttribute="top" id="mOq-o3-N5Z"/>
-                            <constraint firstItem="un7-Rm-vC6" firstAttribute="centerX" secondItem="ue3-wc-p0m" secondAttribute="centerX" id="qrP-wd-9xo"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="wo1-k5-rKc"/>
                     <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="countLabel" destination="w69-vR-nJ7" id="Okb-5h-VpU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HIV-AQ-SdH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1365.5999999999999" y="-771.36431784107947"/>
         </scene>
-        <!--Next View Controller-->
+        <!--Frosted Profile View Controller-->
         <scene sceneID="Oig-Ye-XsU">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="5e1-3J-Mud" customClass="NextViewController" customModule="SwiftGitTrans" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="5e1-3J-Mud" customClass="FrostedProfileViewController" customModule="SwiftGitTrans" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3gV-z8-f2t"/>
                         <viewControllerLayoutGuide type="bottom" id="7Hf-8k-QMb"/>
@@ -161,10 +171,10 @@
             </objects>
             <point key="canvasLocation" x="433" y="110"/>
         </scene>
-        <!--Next View Controller-->
+        <!--Frosted Recommend Person View Controller-->
         <scene sceneID="4Mk-d2-O4s">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="AEg-RQ-dMV" customClass="NextViewController" customModule="SwiftGitTrans" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="AEg-RQ-dMV" customClass="FrostedRecommendPersonViewController" customModule="SwiftGitTrans" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3OR-XC-aqq"/>
                         <viewControllerLayoutGuide type="bottom" id="Dlw-M0-8PE"/>
@@ -209,10 +219,10 @@
             </objects>
             <point key="canvasLocation" x="1366" y="605"/>
         </scene>
-        <!--Next View Controller-->
+        <!--Frosted Map View Controller-->
         <scene sceneID="eor-AA-zsp">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="xez-Kk-Pgh" customClass="NextViewController" customModule="SwiftGitTrans" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="xez-Kk-Pgh" customClass="FrostedMapViewController" customModule="SwiftGitTrans" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ffb-x5-004"/>
                         <viewControllerLayoutGuide type="bottom" id="MxO-cd-ij5"/>
@@ -257,10 +267,10 @@
             </objects>
             <point key="canvasLocation" x="1366" y="1333"/>
         </scene>
-        <!--Next View Controller-->
+        <!--Frosted Setting View Controller-->
         <scene sceneID="fq1-Vb-j7L">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="OBg-br-2rb" customClass="NextViewController" customModule="SwiftGitTrans" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="OBg-br-2rb" customClass="FrostedSettingViewController" customModule="SwiftGitTrans" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Iyp-lV-DW5"/>
                         <viewControllerLayoutGuide type="bottom" id="Uri-4t-4U7"/>
@@ -309,5 +319,7 @@
     <resources>
         <image name="Background" width="63" height="111"/>
         <image name="burger" width="19" height="17"/>
+        <image name="minus" width="128" height="128"/>
+        <image name="plus" width="128" height="128"/>
     </resources>
 </document>
