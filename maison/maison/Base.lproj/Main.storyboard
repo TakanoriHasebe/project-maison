@@ -103,7 +103,7 @@
         <!--Item-->
         <scene sceneID="Hob-Vf-dtL">
             <objects>
-                <viewController id="MfH-hi-akD" customClass="NextViewController" customModule="maison" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="MfH-hi-akD" customClass="FrostedMaisonViewController" customModule="maison" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YyQ-te-lUp"/>
                         <viewControllerLayoutGuide type="bottom" id="emC-BP-qwn"/>
@@ -150,10 +150,10 @@
             </objects>
             <point key="canvasLocation" x="3454" y="-1220"/>
         </scene>
-        <!--Next View Controller-->
+        <!--Frosted Profile View Controller-->
         <scene sceneID="nhK-Qb-e0Z">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="Mp8-9F-bEd" customClass="NextViewController" customModule="maison" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="Mp8-9F-bEd" customClass="FrostedProfileViewController" customModule="maison" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xBe-hE-jyE"/>
                         <viewControllerLayoutGuide type="bottom" id="7dh-rH-ZDl"/>
@@ -201,7 +201,7 @@
         <!--Item-->
         <scene sceneID="PPL-d4-UqN">
             <objects>
-                <viewController id="2G8-I6-uK1" customClass="NextViewController" customModule="maison" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2G8-I6-uK1" customClass="FrostedRecommendPersonViewController" customModule="maison" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kKd-Yc-Ot6"/>
                         <viewControllerLayoutGuide type="bottom" id="4h0-f7-oU5"/>
@@ -280,7 +280,7 @@
         <!--Item-->
         <scene sceneID="ZTb-RF-idb">
             <objects>
-                <viewController id="kbm-d1-ICP" customClass="NextViewController" customModule="maison" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kbm-d1-ICP" customClass="FrostedMapViewController" customModule="maison" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nau-5A-hsa"/>
                         <viewControllerLayoutGuide type="bottom" id="wmg-jk-Lo5"/>
@@ -322,8 +322,8 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="ggY-tW-Rkc"/>
                                 <exclude reference="2Lu-FI-QYm"/>
+                                <exclude reference="ggY-tW-Rkc"/>
                             </mask>
                         </variation>
                     </view>
@@ -336,7 +336,7 @@
         <!--Item-->
         <scene sceneID="Ekm-ek-Aa9">
             <objects>
-                <viewController id="zyC-QX-TBr" customClass="NextViewController" customModule="maison" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="zyC-QX-TBr" customClass="FrostedSettingViewController" customModule="maison" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dl6-fi-Wng"/>
                         <viewControllerLayoutGuide type="bottom" id="DAp-34-1PB"/>

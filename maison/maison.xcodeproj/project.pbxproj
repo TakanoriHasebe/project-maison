@@ -8,10 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		6F66DC4AFD6B6DC15025A0E2 /* Pods_maison.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF63B2F69B893E2CFCCE4F7 /* Pods_maison.framework */; };
+		F3315EB21EC98C3300B738A6 /* FrostedMaisonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3315EB11EC98C3300B738A6 /* FrostedMaisonViewController.swift */; };
+		F3315EB51EC98CD700B738A6 /* FrostedProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3315EB41EC98CD700B738A6 /* FrostedProfileViewController.swift */; };
+		F3315EB91EC98D4800B738A6 /* FrostedRecommendPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3315EB81EC98D4800B738A6 /* FrostedRecommendPersonViewController.swift */; };
+		F3315EBC1EC98DBA00B738A6 /* FrostedMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3315EBB1EC98DBA00B738A6 /* FrostedMapViewController.swift */; };
+		F3315EBF1EC98E1800B738A6 /* FrostedSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3315EBE1EC98E1800B738A6 /* FrostedSettingViewController.swift */; };
 		F37AC7CE1E9F7C3A00252566 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F37AC7CD1E9F7C3A00252566 /* GoogleService-Info.plist */; };
 		F3A56B7F1EC80425007C2A82 /* FrostedSidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A56B7E1EC80425007C2A82 /* FrostedSidebar.swift */; };
 		F3A56B811EC804F8007C2A82 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A56B801EC804F8007C2A82 /* TabBarController.swift */; };
-		F3A56B831EC80553007C2A82 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A56B821EC80553007C2A82 /* NextViewController.swift */; };
 		F3EDDE311EC3F13400E38169 /* MapConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EDDE301EC3F13400E38169 /* MapConfirmViewController.swift */; };
 		F3FB60251E9F41D400CC5736 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FB60241E9F41D400CC5736 /* AppDelegate.swift */; };
 		F3FB60271E9F41D400CC5736 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FB60261E9F41D400CC5736 /* ViewController.swift */; };
@@ -23,11 +27,15 @@
 /* Begin PBXFileReference section */
 		4A1AC6FB8835A032BD2C14BB /* Pods-maison.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maison.release.xcconfig"; path = "Pods/Target Support Files/Pods-maison/Pods-maison.release.xcconfig"; sourceTree = "<group>"; };
 		4CF63B2F69B893E2CFCCE4F7 /* Pods_maison.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_maison.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3315EB11EC98C3300B738A6 /* FrostedMaisonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrostedMaisonViewController.swift; sourceTree = "<group>"; };
+		F3315EB41EC98CD700B738A6 /* FrostedProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrostedProfileViewController.swift; sourceTree = "<group>"; };
+		F3315EB81EC98D4800B738A6 /* FrostedRecommendPersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrostedRecommendPersonViewController.swift; sourceTree = "<group>"; };
+		F3315EBB1EC98DBA00B738A6 /* FrostedMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrostedMapViewController.swift; sourceTree = "<group>"; };
+		F3315EBE1EC98E1800B738A6 /* FrostedSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrostedSettingViewController.swift; sourceTree = "<group>"; };
 		F338315B1E9F60AB001C0A4B /* maison.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = maison.entitlements; sourceTree = "<group>"; };
 		F37AC7CD1E9F7C3A00252566 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F3A56B7E1EC80425007C2A82 /* FrostedSidebar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrostedSidebar.swift; sourceTree = "<group>"; };
 		F3A56B801EC804F8007C2A82 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		F3A56B821EC80553007C2A82 /* NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 		F3EDDE301EC3F13400E38169 /* MapConfirmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapConfirmViewController.swift; sourceTree = "<group>"; };
 		F3FB60211E9F41D400CC5736 /* maison.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = maison.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3FB60241E9F41D400CC5736 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +76,72 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F3315EAF1EC98BCF00B738A6 /* FrostedSidebarSetting */ = {
+			isa = PBXGroup;
+			children = (
+				F3A56B801EC804F8007C2A82 /* TabBarController.swift */,
+			);
+			name = FrostedSidebarSetting;
+			sourceTree = "<group>";
+		};
+		F3315EB01EC98BE800B738A6 /* FirstLoginSetting */ = {
+			isa = PBXGroup;
+			children = (
+				F3FB60261E9F41D400CC5736 /* ViewController.swift */,
+				F3EDDE301EC3F13400E38169 /* MapConfirmViewController.swift */,
+			);
+			name = FirstLoginSetting;
+			sourceTree = "<group>";
+		};
+		F3315EB31EC98C8500B738A6 /* FrostedMaison */ = {
+			isa = PBXGroup;
+			children = (
+				F3315EB11EC98C3300B738A6 /* FrostedMaisonViewController.swift */,
+			);
+			name = FrostedMaison;
+			sourceTree = "<group>";
+		};
+		F3315EB61EC98CDC00B738A6 /* FrostedProfile */ = {
+			isa = PBXGroup;
+			children = (
+				F3315EB41EC98CD700B738A6 /* FrostedProfileViewController.swift */,
+			);
+			name = FrostedProfile;
+			sourceTree = "<group>";
+		};
+		F3315EB71EC98D2400B738A6 /* FrostedRecommendPerson */ = {
+			isa = PBXGroup;
+			children = (
+				F3315EB81EC98D4800B738A6 /* FrostedRecommendPersonViewController.swift */,
+			);
+			name = FrostedRecommendPerson;
+			sourceTree = "<group>";
+		};
+		F3315EBA1EC98DA500B738A6 /* FrostedMap */ = {
+			isa = PBXGroup;
+			children = (
+				F3315EBB1EC98DBA00B738A6 /* FrostedMapViewController.swift */,
+			);
+			name = FrostedMap;
+			sourceTree = "<group>";
+		};
+		F3315EBD1EC98E0600B738A6 /* FrostedSetting */ = {
+			isa = PBXGroup;
+			children = (
+				F3315EBE1EC98E1800B738A6 /* FrostedSettingViewController.swift */,
+			);
+			name = FrostedSetting;
+			sourceTree = "<group>";
+		};
+		F3315EC01EC98E7000B738A6 /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				F3FB60301E9F41D400CC5736 /* Info.plist */,
+				F37AC7CD1E9F7C3A00252566 /* GoogleService-Info.plist */,
+			);
+			name = Plist;
+			sourceTree = "<group>";
+		};
 		F3FB60181E9F41D400CC5736 = {
 			isa = PBXGroup;
 			children = (
@@ -90,17 +164,19 @@
 		F3FB60231E9F41D400CC5736 /* maison */ = {
 			isa = PBXGroup;
 			children = (
+				F3315EB31EC98C8500B738A6 /* FrostedMaison */,
+				F3315EB61EC98CDC00B738A6 /* FrostedProfile */,
+				F3315EB71EC98D2400B738A6 /* FrostedRecommendPerson */,
+				F3315EBA1EC98DA500B738A6 /* FrostedMap */,
+				F3315EBD1EC98E0600B738A6 /* FrostedSetting */,
+				F3315EB01EC98BE800B738A6 /* FirstLoginSetting */,
+				F3315EAF1EC98BCF00B738A6 /* FrostedSidebarSetting */,
+				F3315EC01EC98E7000B738A6 /* Plist */,
 				F338315B1E9F60AB001C0A4B /* maison.entitlements */,
-				F3A56B801EC804F8007C2A82 /* TabBarController.swift */,
-				F3A56B821EC80553007C2A82 /* NextViewController.swift */,
 				F3FB60241E9F41D400CC5736 /* AppDelegate.swift */,
-				F3FB60261E9F41D400CC5736 /* ViewController.swift */,
-				F3EDDE301EC3F13400E38169 /* MapConfirmViewController.swift */,
 				F3FB60281E9F41D400CC5736 /* Main.storyboard */,
 				F3FB602B1E9F41D400CC5736 /* Assets.xcassets */,
 				F3FB602D1E9F41D400CC5736 /* LaunchScreen.storyboard */,
-				F3FB60301E9F41D400CC5736 /* Info.plist */,
-				F37AC7CD1E9F7C3A00252566 /* GoogleService-Info.plist */,
 			);
 			path = maison;
 			sourceTree = "<group>";
@@ -236,9 +312,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3A56B7F1EC80425007C2A82 /* FrostedSidebar.swift in Sources */,
-				F3A56B831EC80553007C2A82 /* NextViewController.swift in Sources */,
 				F3FB60271E9F41D400CC5736 /* ViewController.swift in Sources */,
+				F3315EBC1EC98DBA00B738A6 /* FrostedMapViewController.swift in Sources */,
+				F3315EB21EC98C3300B738A6 /* FrostedMaisonViewController.swift in Sources */,
+				F3315EB51EC98CD700B738A6 /* FrostedProfileViewController.swift in Sources */,
+				F3315EB91EC98D4800B738A6 /* FrostedRecommendPersonViewController.swift in Sources */,
 				F3FB60251E9F41D400CC5736 /* AppDelegate.swift in Sources */,
+				F3315EBF1EC98E1800B738A6 /* FrostedSettingViewController.swift in Sources */,
 				F3A56B811EC804F8007C2A82 /* TabBarController.swift in Sources */,
 				F3EDDE311EC3F13400E38169 /* MapConfirmViewController.swift in Sources */,
 			);
