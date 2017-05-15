@@ -154,6 +154,7 @@
                         <segue destination="5e1-3J-Mud" kind="relationship" relationship="viewControllers" id="AWd-7u-g4l"/>
                         <segue destination="AEg-RQ-dMV" kind="relationship" relationship="viewControllers" id="8hL-df-sOQ"/>
                         <segue destination="xez-Kk-Pgh" kind="relationship" relationship="viewControllers" id="q0Z-f5-hUg"/>
+                        <segue destination="OBg-br-2rb" kind="relationship" relationship="viewControllers" id="iXi-RK-Ozw"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8NM-na-MIS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -255,6 +256,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yQX-hx-DVL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1366" y="1333"/>
+        </scene>
+        <!--Next View Controller-->
+        <scene sceneID="fq1-Vb-j7L">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="OBg-br-2rb" customClass="NextViewController" customModule="SwiftGitTrans" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Iyp-lV-DW5"/>
+                        <viewControllerLayoutGuide type="bottom" id="Uri-4t-4U7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6gH-cV-fxa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="VGK-dZ-4bg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwt-a9-pBd">
+                                <rect key="frame" x="20" y="40" width="19" height="18"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="burger"/>
+                                <connections>
+                                    <action selector="onBurger" destination="OBg-br-2rb" eventType="touchUpInside" id="8ng-uo-Y8A"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Controller 5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Gf-eH-ce8">
+                                <rect key="frame" x="121.5" y="323" width="132" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="VGK-dZ-4bg" secondAttribute="trailing" id="8mk-rD-RNF"/>
+                            <constraint firstItem="VGK-dZ-4bg" firstAttribute="leading" secondItem="6gH-cV-fxa" secondAttribute="leading" id="9j5-Kg-4yr"/>
+                            <constraint firstItem="VGK-dZ-4bg" firstAttribute="top" secondItem="6gH-cV-fxa" secondAttribute="top" id="A9I-fH-vSY"/>
+                            <constraint firstItem="kwt-a9-pBd" firstAttribute="leading" secondItem="6gH-cV-fxa" secondAttribute="leading" constant="20" id="KcY-nc-sYt"/>
+                            <constraint firstAttribute="centerX" secondItem="3Gf-eH-ce8" secondAttribute="centerX" id="PVa-6B-62R"/>
+                            <constraint firstItem="kwt-a9-pBd" firstAttribute="top" secondItem="Iyp-lV-DW5" secondAttribute="bottom" constant="20" id="SXj-nB-CSk"/>
+                            <constraint firstAttribute="bottom" secondItem="VGK-dZ-4bg" secondAttribute="bottom" id="gqg-BO-E5y"/>
+                            <constraint firstAttribute="centerY" secondItem="3Gf-eH-ce8" secondAttribute="centerY" id="nbI-1c-ogo"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" id="4M6-Za-Sg8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jsJ-2I-sgc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1366" y="2052"/>
         </scene>
     </scenes>
     <resources>
