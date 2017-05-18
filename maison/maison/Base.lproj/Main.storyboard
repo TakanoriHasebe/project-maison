@@ -219,7 +219,7 @@
         <scene sceneID="YuI-Mi-VX2">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WKG-YU-2i6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" id="sv0-HB-8mU">
+                    <tabBarItem key="tabBarItem" title="" systemItem="favorites" id="C3d-8e-HUH">
                         <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -240,7 +240,7 @@
         <scene sceneID="Imz-wq-2WT">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hIY-OU-8IN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" id="xhW-gT-TIZ">
+                    <tabBarItem key="tabBarItem" title="" image="Group" id="xhW-gT-TIZ">
                         <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -255,7 +255,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aoP-Iq-TMh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3574" y="-597"/>
+            <point key="canvasLocation" x="3625" y="-598"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="15C-FX-8Ct">
@@ -276,7 +276,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rv2-aN-ygo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3524" y="152"/>
+            <point key="canvasLocation" x="3625" y="152"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VRx-WT-FfN">
@@ -297,7 +297,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T8r-HE-dQw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3524" y="878"/>
+            <point key="canvasLocation" x="3625" y="878"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="f7a-2w-KQ0">
@@ -318,12 +318,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bDp-jR-aZB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3524" y="1675"/>
+            <point key="canvasLocation" x="3625" y="1675"/>
         </scene>
     </scenes>
     <resources>
         <image name="Facebook_Btn_4" width="1316" height="212"/>
         <image name="Google_Login_4" width="1316" height="212"/>
+        <image name="Group" width="27" height="26"/>
         <image name="MapBackGround" width="500" height="750"/>
         <image name="login-image" width="564" height="846"/>
     </resources>
