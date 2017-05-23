@@ -19,6 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     // ①, ③
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        // change color of tab bar's items
+        UITabBar.appearance().tintColor = .black
+        
         // ②
         FIRApp.configure()
         
