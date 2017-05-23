@@ -215,15 +215,15 @@
             </objects>
             <point key="canvasLocation" x="2489" y="152"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Maison-->
         <scene sceneID="YuI-Mi-VX2">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WKG-YU-2i6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" systemItem="favorites" id="C3d-8e-HUH">
+                    <tabBarItem key="tabBarItem" title="Maison" id="C3d-8e-HUH">
                         <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
                     </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="VR7-eb-9gb">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VR7-eb-9gb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -236,15 +236,15 @@
             </objects>
             <point key="canvasLocation" x="3625" y="-1427"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Map-->
         <scene sceneID="Imz-wq-2WT">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hIY-OU-8IN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="Group" id="xhW-gT-TIZ">
+                    <tabBarItem key="tabBarItem" title="Map" id="xhW-gT-TIZ">
                         <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
                     </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="KBw-so-95Y">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KBw-so-95Y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -257,15 +257,15 @@
             </objects>
             <point key="canvasLocation" x="3625" y="-598"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Recommend-->
         <scene sceneID="15C-FX-8Ct">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="f6w-md-gNq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" id="XXD-F3-LYM">
+                    <tabBarItem key="tabBarItem" title="Recommend" id="XXD-F3-LYM">
                         <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
                     </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Bdx-DX-vxl">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bdx-DX-vxl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -278,15 +278,15 @@
             </objects>
             <point key="canvasLocation" x="3625" y="152"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Profile-->
         <scene sceneID="VRx-WT-FfN">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zls-Lu-UQ0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" id="ykY-qc-LaB">
+                    <tabBarItem key="tabBarItem" title="Profile" id="ykY-qc-LaB">
                         <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
                     </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="kfO-RG-Qu1">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kfO-RG-Qu1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -299,15 +299,15 @@
             </objects>
             <point key="canvasLocation" x="3625" y="878"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Setting-->
         <scene sceneID="f7a-2w-KQ0">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wrb-pq-gLx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" id="UJj-q1-zjJ">
+                    <tabBarItem key="tabBarItem" title="Setting" id="UJj-q1-zjJ">
                         <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
                     </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="0Mp-lw-qOu">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0Mp-lw-qOu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -324,7 +324,6 @@
     <resources>
         <image name="Facebook_Btn_4" width="1316" height="212"/>
         <image name="Google_Login_4" width="1316" height="212"/>
-        <image name="Group" width="27" height="26"/>
         <image name="MapBackGround" width="500" height="750"/>
         <image name="login-image" width="564" height="846"/>
     </resources>
