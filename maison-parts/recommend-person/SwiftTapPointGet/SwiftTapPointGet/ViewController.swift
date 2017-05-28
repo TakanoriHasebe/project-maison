@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     var tapLocation: CGPoint = CGPoint()
     
     // タップした場所を取得する関数
+    /* この中に書いていく */
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         // タッチイベントを取得する
@@ -20,11 +21,18 @@ class ViewController: UIViewController {
         
         // タップした座標を取得する
         tapLocation = touch!.location(in: self.view)
+        
+        // タップした座標の表示
+        print(tapLocation.x)
+        print(tapLocation.y)
+        
+        /* 以下if文 */
+        
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         
     }
