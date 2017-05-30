@@ -24,17 +24,14 @@ class ViewController: UIViewController {
         
     }
     
-    
-    
-    
+    /* Tapの時のジェスチャーをここに追加 */
     @IBAction func Tap(_ sender: UITapGestureRecognizer) {
         
         print("Tap")
-        print(tapLocation.x)
         
     }
     
-    
+    /* 長押しの時のジェスチャーをここに追加 */
     @IBAction func LongPress(_ sender: UILongPressGestureRecognizer) {
         
         //呼び出されたタイミングを確認する。
