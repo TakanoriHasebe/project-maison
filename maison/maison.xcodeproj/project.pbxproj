@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6F66DC4AFD6B6DC15025A0E2 /* Pods_maison.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF63B2F69B893E2CFCCE4F7 /* Pods_maison.framework */; };
 		F37AC7CE1E9F7C3A00252566 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F37AC7CD1E9F7C3A00252566 /* GoogleService-Info.plist */; };
+		F3A61C8C1EDD3B1A00743F81 /* SwiftRecommendPerson0.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A61C8B1EDD3B1A00743F81 /* SwiftRecommendPerson0.swift */; };
 		F3EDDE311EC3F13400E38169 /* MapConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EDDE301EC3F13400E38169 /* MapConfirmViewController.swift */; };
 		F3FB60251E9F41D400CC5736 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FB60241E9F41D400CC5736 /* AppDelegate.swift */; };
 		F3FB60271E9F41D400CC5736 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FB60261E9F41D400CC5736 /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 		4CF63B2F69B893E2CFCCE4F7 /* Pods_maison.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_maison.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F338315B1E9F60AB001C0A4B /* maison.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = maison.entitlements; sourceTree = "<group>"; };
 		F37AC7CD1E9F7C3A00252566 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F3A61C8B1EDD3B1A00743F81 /* SwiftRecommendPerson0.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftRecommendPerson0.swift; sourceTree = "<group>"; };
 		F3EDDE301EC3F13400E38169 /* MapConfirmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapConfirmViewController.swift; sourceTree = "<group>"; };
 		F3FB60211E9F41D400CC5736 /* maison.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = maison.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3FB60241E9F41D400CC5736 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				F3315EB01EC98BE800B738A6 /* FirstLoginSetting */,
 				F3315EC01EC98E7000B738A6 /* Plist */,
 				F338315B1E9F60AB001C0A4B /* maison.entitlements */,
+				F3A61C8B1EDD3B1A00743F81 /* SwiftRecommendPerson0.swift */,
 				F3FB60241E9F41D400CC5736 /* AppDelegate.swift */,
 				F3FB60281E9F41D400CC5736 /* Main.storyboard */,
 				F3FB602B1E9F41D400CC5736 /* Assets.xcassets */,
@@ -242,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3A61C8C1EDD3B1A00743F81 /* SwiftRecommendPerson0.swift in Sources */,
 				F3FB60271E9F41D400CC5736 /* ViewController.swift in Sources */,
 				F3FB60251E9F41D400CC5736 /* AppDelegate.swift in Sources */,
 				F3EDDE311EC3F13400E38169 /* MapConfirmViewController.swift in Sources */,
