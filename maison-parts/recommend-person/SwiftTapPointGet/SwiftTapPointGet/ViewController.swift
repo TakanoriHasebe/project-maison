@@ -23,12 +23,19 @@ class ViewController: UIViewController {
         tapLocation = touch!.location(in: self.view)
         
         // タップした座標の表示
-        print(tapLocation.x)
-        print(tapLocation.y)
+        // print(tapLocation.x)
+        // print(tapLocation.y)
         
         /* 以下if文 */
         
     }
+    
+    @IBAction func Tap(_ sender: UITapGestureRecognizer) {
+        
+        print("Tap")
+        
+    }
+    
     
     
     override func viewDidLoad() {
