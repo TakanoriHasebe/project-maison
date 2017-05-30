@@ -32,9 +32,24 @@ class ViewController: UIViewController {
     
     @IBAction func Tap(_ sender: UITapGestureRecognizer) {
         
-        print(tapLocation)
+        print("Tap")
+        print(tapLocation.x)
         
     }
+    
+    
+    @IBAction func LongPress(_ sender: UILongPressGestureRecognizer) {
+        
+        //呼び出されたタイミングを確認する。
+        if(sender.state == UIGestureRecognizerState.began) {
+            print("LongPress")
+            print(tapLocation.x)
+        } else if (sender.state == UIGestureRecognizerState.ended) {
+            
+        }
+        
+    }
+    
     
     
     

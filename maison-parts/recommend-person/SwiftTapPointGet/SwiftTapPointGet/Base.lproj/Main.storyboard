@@ -24,6 +24,7 @@
                         <gestureRecognizers/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="Gay-ci-txP" appends="YES" id="VaG-EG-iEx"/>
+                            <outletCollection property="gestureRecognizers" destination="ngQ-LK-A7T" appends="YES" id="fjb-fo-tpn"/>
                         </connections>
                     </view>
                 </viewController>
@@ -33,6 +34,11 @@
                         <action selector="Tap:" destination="BYZ-38-t0r" id="JbH-ce-zuV"/>
                     </connections>
                 </tapGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="ngQ-LK-A7T">
+                    <connections>
+                        <action selector="LongPress:" destination="BYZ-38-t0r" id="yhp-0N-K5g"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-378" y="45"/>
         </scene>
