@@ -32,7 +32,7 @@ class ViewController: UIViewController {
     
     @IBAction func Tap(_ sender: UITapGestureRecognizer) {
         
-        print("Tap")
+        print(tapLocation)
         
     }
     
