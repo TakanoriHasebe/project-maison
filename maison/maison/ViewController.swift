@@ -148,7 +148,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDel
             print(user ?? "")
         })
         
-        FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "name, id, email"]).start { (connection, result, err) in
+        FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "name, id, email, cover"]).start { (connection, result, err) in
             if err != nil{
                 print("Failed to start graph request:", err!)
                 return
