@@ -6,9 +6,11 @@
 //  Copyright © 2017年 Takanori.H. All rights reserved.
 //
 
+//
 import UIKit
 
-class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource
+ {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -33,8 +35,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         cell.layer.cornerRadius = 50
         
-        cell.myImage.image = UIImage(named: images[indexPath.row])
-        cell.myImage.contentMode = .scaleAspectFill
+        cell.MyButtonImages.setBackgroundImage(UIImage(named: images[indexPath.row])!, for: UIControlState.normal)
+        // cell.MyButtonImages.imageView?.image = UIImage(named: images[indexPath.row])
+        // cell.MyButtonImages.contentMode = .scaleAspectFill
+
+        
+        // cell.myImage.image = UIImage(named: images[indexPath.row])
+        // cell.myImage.contentMode = .scaleAspectFill
         
         
         return cell
