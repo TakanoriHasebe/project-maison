@@ -8,8 +8,10 @@
 
 import UIKit
 
-class CustomCell: UICollectionViewCell {
+class CustomCell: UICollectionViewCell, UIGestureRecognizerDelegate {
     
     @IBOutlet weak var MyButtonImages: UIButton!
+    
+    
     
 }
