@@ -31,14 +31,17 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         /* LongPress */
         let lpgr = UILongPressGestureRecognizer(target: self, action: #selector(ViewController.handleLongPress(_:)))
-        lpgr.minimumPressDuration = 0.5
+        lpgr.minimumPressDuration = 0.3
         lpgr.delaysTouchesBegan = true
         lpgr.delegate = self
         self.collectionView.addGestureRecognizer(lpgr)
         
+        /* Temp */
+        self.collectionView.isUserInteractionEnabled = true
+        
     }
     
-    /* Pressの時の動作 */
+    /* Tapの時の動作 */
     func handlePress(_ gestureReconizer: UITapGestureRecognizer){
         
         
@@ -72,8 +75,20 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         if let index = indexPath {
             var cell = collectionView.cellForItem(at: index)
             // do stuff with your cell, for example print the indexPath
-            print("Long Press")
-            print(index.row)
+            
+            if( gestureReconizer.state == UIGestureRecognizerState.began) {
+                print("Long Press Begin")
+                let transform = self.collectionView.transform
+                UICollectionView.animate(withDuration: 0.0, animations: {
+                    cell?.transform = CGAffineTransform(scaleX: 0.95, y: 0.95)
+                })
+                print(index.row)
+            }else if (gestureReconizer.state == UIGestureRecognizerState.ended) {
+                cell?.transform = CGAffineTransform.identity
+                print("Long Press Over")
+            }
+            
+            
         } else {
             print("Could not find index path")
         }
