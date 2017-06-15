@@ -12,8 +12,12 @@ import UIKit
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UIGestureRecognizerDelegate
  {
 
+    /* timer */
+    var timer: Timer!
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
+    /* ここをFirebaseから取得する */
     var images = ["one", "two", "three", "four", "five", "six"]
     
     override func viewDidLoad() {
@@ -54,8 +58,20 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         if let index = indexPath {
             var cell = collectionView.cellForItem(at: index)
-            print("Tap")
-            print(index.row)
+            
+            let transform = self.collectionView.transform
+            UICollectionView.animate(withDuration: 0.0, animations: {
+                cell?.transform = CGAffineTransform(scaleX: 0.98, y: 0.98)
+            })
+
+            
+            if (gestureReconizer.state == UIGestureRecognizerState.ended) {
+                
+                cell?.transform = CGAffineTransform.identity
+            }
+            
+            // print("Tap")
+            // print(index.row)
         } else {
             print("Tap")
             print("Could not find index path")
@@ -81,7 +97,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                 print("Long Press Begin")
                 let transform = self.collectionView.transform
                 UICollectionView.animate(withDuration: 0.0, animations: {
-                    cell?.transform = CGAffineTransform(scaleX: 0.95, y: 0.95)
+                    cell?.transform = CGAffineTransform(scaleX: 0.98, y: 0.98)
                 })
                 print(index.row)
             }else if (gestureReconizer.state == UIGestureRecognizerState.ended) {
