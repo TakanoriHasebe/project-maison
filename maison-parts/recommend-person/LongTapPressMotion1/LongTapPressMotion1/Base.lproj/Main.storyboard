@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -31,7 +31,6 @@
                                 </state>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="S9W-GA-3gy" appends="YES" id="1Rw-A7-3G7"/>
-                                    <outletCollection property="gestureRecognizers" destination="WFz-NC-4cH" appends="YES" id="QYS-Jq-gjU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -42,11 +41,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="WFz-NC-4cH">
-                    <connections>
-                        <action selector="LongTapBtn:" destination="BYZ-38-t0r" id="Sqs-1i-af0"/>
-                    </connections>
-                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="WFz-NC-4cH"/>
                 <tapGestureRecognizer id="S9W-GA-3gy">
                     <connections>
                         <action selector="TapBtn:" destination="BYZ-38-t0r" id="iLI-U6-vUY"/>

@@ -65,9 +65,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     /* LongPressの時の動作 */
     func handleLongPress(_ gestureReconizer: UILongPressGestureRecognizer) {
+        /*
         if gestureReconizer.state != UIGestureRecognizerState.ended {
             return
-        }
+        }*/
         
         let p = gestureReconizer.location(in: collectionView)
         let indexPath = collectionView.indexPathForItem(at: p)
