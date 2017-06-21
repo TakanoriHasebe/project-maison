@@ -11,9 +11,6 @@ import UIKit
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UIGestureRecognizerDelegate
  {
-
-    /* timer */
-    var timer: Timer!
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -40,7 +37,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         lpgr.delegate = self
         self.collectionView.addGestureRecognizer(lpgr)
         
-        /* Temp */
         self.collectionView.isUserInteractionEnabled = true
         
     }
@@ -66,7 +62,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 
             
             if (gestureReconizer.state == UIGestureRecognizerState.ended) {
-                
+                print("Tap")
+                print(index.row)
                 cell?.transform = CGAffineTransform.identity
             }
             
