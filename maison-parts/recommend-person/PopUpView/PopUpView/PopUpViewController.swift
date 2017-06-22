@@ -15,6 +15,18 @@ class PopUpViewController: UIViewController {
 
         self.view.backgroundColor = UIColor.black.withAlphaComponent(0.8)
         
+        let label = UILabel()
+        // label.frame = CGRect(x:150, y:300, width:100, height:100)
+        label.text = "Test"
+        label.backgroundColor = UIColor.white
+        label.textColor = UIColor.black
+        self.view.addSubview(label)
+        
+        let screenWidth:CGFloat = view.frame.size.width
+        label.frame = CGRect(x:10, y:300, width:screenWidth-20, height:100)
+        
+        label.textAlignment = .right
+        
         self.showAnimate()
         
     }
@@ -26,12 +38,14 @@ class PopUpViewController: UIViewController {
         
     }
     
+    
+    /*
     @IBAction func closePopUp(_ sender: AnyObject) {
         
         // self.view.removeFromSuperview()
         self.removeAnimate()
         
-    }
+    }*/
     
     func showAnimate()
     {
