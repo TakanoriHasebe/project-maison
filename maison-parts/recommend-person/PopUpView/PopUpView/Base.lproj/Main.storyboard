@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -51,12 +51,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kJ9-7n-Ng3">
-                                <rect key="frame" x="67" y="213" width="240" height="240"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" red="0.89448350669999999" green="0.26413464549999999" blue="0.89652043579999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="240" id="eZ2-an-LR5"/>
-                                    <constraint firstAttribute="width" constant="240" id="hWc-qo-1jg"/>
-                                </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHg-87-K3K">
                                 <rect key="frame" x="168" y="397" width="39" height="30"/>
@@ -78,14 +74,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="kJ9-7n-Ng3" secondAttribute="trailing" id="7Fy-8v-i9I"/>
                             <constraint firstItem="kJ9-7n-Ng3" firstAttribute="centerY" secondItem="Wh4-VO-otR" secondAttribute="centerY" id="IHl-Fi-HMF"/>
                             <constraint firstItem="kJ9-7n-Ng3" firstAttribute="centerX" secondItem="Wh4-VO-otR" secondAttribute="centerX" id="Ozj-iX-ab9"/>
+                            <constraint firstItem="kJ9-7n-Ng3" firstAttribute="leading" secondItem="Wh4-VO-otR" secondAttribute="leading" id="Xpu-tI-dTb"/>
+                            <constraint firstItem="kJ9-7n-Ng3" firstAttribute="top" secondItem="Wh4-VO-otR" secondAttribute="top" id="fcp-be-ExW"/>
+                            <constraint firstItem="wWd-v7-5lm" firstAttribute="top" secondItem="kJ9-7n-Ng3" secondAttribute="bottom" id="nUw-O6-eAk"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yn7-Ww-9v6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="756" y="37"/>
+            <point key="canvasLocation" x="1018.4" y="37.331334332833585"/>
         </scene>
     </scenes>
 </document>

@@ -28,7 +28,8 @@ class PopUpViewController: UIViewController {
     
     @IBAction func closePopUp(_ sender: AnyObject) {
         
-        self.view.removeFromSuperview()
+        // self.view.removeFromSuperview()
+        self.removeAnimate()
         
     }
     
@@ -44,7 +45,7 @@ class PopUpViewController: UIViewController {
     
     func removeAnimate()
     {
-        UIView.animate(withDuration: 0.25, animations: {
+        UIView.animate(withDuration: 0.20, animations: {
             self.view.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
             self.view.alpha = 0.0;
         }, completion:{(finished : Bool)  in
