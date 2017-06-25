@@ -10,91 +10,23 @@ import UIKit
 
 class PopUpViewController: UIViewController {
 
-    /******************** create UI ********************/
-    
-    /* 自己紹介の画像 */
-    let profileImage: UIImageView = {
-       
-        let profileImage = UIImageView()
-        profileImage.image = UIImage(named: "personImage0")
-        profileImage.translatesAutoresizingMaskIntoConstraints = false
-        profileImage.contentMode = .scaleAspectFill
-        
-        return profileImage
-        
-    }()
-    
-    /* 名前の文 */
-    let nameLabel: UILabel = {
-        
-        let nameLabel = UILabel()
-        nameLabel.textColor = UIColor.white
-        nameLabel.backgroundColor = UIColor.black
-        nameLabel.text = "Mick Willoughby"
-        nameLabel.sizeToFit()
-        
-        return nameLabel
-        
-    }()
-    
-    /* 自己紹介の文 */
-    let profileLabel: UILabel = {
-       
-        let profileLabel = UILabel()
-        profileLabel.backgroundColor = UIColor.black
-        profileLabel.textColor = UIColor.white
-        profileLabel.text = "Test"
-        profileLabel.font = UIFont(name: "HiraMinProN-W3", size: 15)
-        profileLabel.sizeToFit()
-        
-        return profileLabel
-        
-    }()
-    
+    /* Main.storyboardを用いた場合には、画像の読み込み、自己紹介の読み込みについて */
     /******************** call first ********************/
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = UIColor.black
-        
-        /* 各UIの貼り付け */
-        view.addSubview(profileImage)
-        view.addSubview(nameLabel)
-        
-        /* constraintsの設定 */
-        setupProfileImage()
-        setupProfileName()
-        
+        /* 背景色の設定 */
+        // self.view.backgroundColor = UIColor.black
         
         self.showAnimate()
         
     }
     
-    /******************** contraints ********************/
+    @IBOutlet weak var profileLabel: UILabel!
     
-    /* プロフィールの画像 */
-    func setupProfileImage(){
-        // need x, y, width, hegiht, constraints
-        profileImage.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        profileImage.widthAnchor.constraint(equalToConstant: view.bounds.size.width).isActive = true
-        profileImage.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-    }
     
-    /* プロフィールの名前 */
-    func setupProfileName(){
-        // need x, y, width, hegiht, constraints
-        nameLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 100).isActive = true
-        
-    }
     
-    /* プロフィールの文 */
-    func setupProfileLabel(){
-        // need x, y, width, hegiht, constraints
-        
-        
-    }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
@@ -103,14 +35,7 @@ class PopUpViewController: UIViewController {
     }
     
     
-    /*
-    @IBAction func closePopUp(_ sender: AnyObject) {
-        
-        // self.view.removeFromSuperview()
-        self.removeAnimate()
-        
-    }*/
-    
+    /******************** setting animation ********************/
     func showAnimate()
     {
         self.view.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
@@ -150,4 +75,82 @@ class PopUpViewController: UIViewController {
  self.view.addSubview(label)
  */
 
+/*
+ /******************** create UI ********************/
+ 
+ /* 自己紹介の画像 */
+ let profileImage: UIImageView = {
+ 
+ let profileImage = UIImageView()
+ profileImage.image = UIImage(named: "personImage0")
+ profileImage.translatesAutoresizingMaskIntoConstraints = false
+ profileImage.contentMode = .scaleAspectFill
+ 
+ return profileImage
+ 
+ }()
+ 
+ /* 名前の文 */
+ let nameLabel: UILabel = {
+ 
+ let nameLabel = UILabel()
+ nameLabel.textColor = UIColor.white
+ nameLabel.backgroundColor = UIColor.black
+ nameLabel.text = "Mick Willoughby"
+ nameLabel.sizeToFit()
+ 
+ return nameLabel
+ 
+ }()
+ 
+ /* 自己紹介の文 */
+ let profileLabel: UILabel = {
+ 
+ let profileLabel = UILabel()
+ profileLabel.backgroundColor = UIColor.black
+ profileLabel.textColor = UIColor.white
+ profileLabel.text = "Test"
+ profileLabel.font = UIFont(name: "HiraMinProN-W3", size: 15)
+ profileLabel.sizeToFit()
+ 
+ return profileLabel
+ 
+ }()
+ */
 
+/*
+ /******************** contraints ********************/
+ 
+ /* プロフィールの画像 */
+ func setupProfileImage(){
+ // need x, y, width, hegiht, constraints
+ profileImage.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+ profileImage.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+ profileImage.widthAnchor.constraint(equalToConstant: view.bounds.size.width).isActive = true
+ profileImage.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+ }
+ 
+ /* プロフィールの名前 */
+ func setupProfileName(){
+ // need x, y, width, hegiht, constraints
+ // nameLabel.topAnchor.constraint(equalTo: profileImage.bottomAnchor, constant: 100).isActive = true
+ 
+ }
+ 
+ /* プロフィールの文 */
+ func setupProfileLabel(){
+ // need x, y, width, hegiht, constraints
+ 
+ 
+ }
+ */
+
+/*
+ /*
+ @IBAction func closePopUp(_ sender: AnyObject) {
+ 
+ // self.view.removeFromSuperview()
+ self.removeAnimate()
+ 
+ }*/
+ */
