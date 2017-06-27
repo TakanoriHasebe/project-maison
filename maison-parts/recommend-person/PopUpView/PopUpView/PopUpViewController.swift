@@ -10,6 +10,9 @@ import UIKit
 
 class PopUpViewController: UIViewController {
 
+    
+    @IBOutlet weak var profileLabel: UILabel!
+    
     /* Main.storyboardを用いた場合には、画像の読み込み、自己紹介の読み込みについて */
     /******************** call first ********************/
     override func viewDidLoad() {
@@ -17,7 +20,7 @@ class PopUpViewController: UIViewController {
         
         /* 背景色の設定 */
         // self.view.backgroundColor = UIColor.black
-        
+        profileLabel.text = "A complex sentence has a main clause and one or more adverbial clauses. Adverbial clauses usually come after the main clause"
         
         
         self.showAnimate()

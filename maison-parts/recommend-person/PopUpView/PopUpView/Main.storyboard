@@ -81,13 +81,22 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="profile text" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxD-rs-ohy">
+                                        <rect key="frame" x="15" y="312" width="345" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="f3f-os-Vbh" firstAttribute="top" secondItem="mkP-Pr-hYa" secondAttribute="bottom" constant="35" id="7EU-Nj-an3"/>
                                     <constraint firstItem="btD-hC-Udw" firstAttribute="top" secondItem="mkP-Pr-hYa" secondAttribute="bottom" constant="35" id="OMh-2n-3jB"/>
+                                    <constraint firstItem="uxD-rs-ohy" firstAttribute="top" secondItem="f3f-os-Vbh" secondAttribute="bottom" constant="8" id="TXQ-wX-Vp4"/>
                                     <constraint firstItem="mkP-Pr-hYa" firstAttribute="top" secondItem="2eu-EI-mfA" secondAttribute="top" id="ZBB-iZ-TQ8"/>
                                     <constraint firstAttribute="trailing" secondItem="f3f-os-Vbh" secondAttribute="trailing" constant="15" id="fYN-G6-4qU"/>
+                                    <constraint firstAttribute="trailing" secondItem="uxD-rs-ohy" secondAttribute="trailing" constant="15" id="jWO-4L-hFJ"/>
+                                    <constraint firstItem="uxD-rs-ohy" firstAttribute="leading" secondItem="2eu-EI-mfA" secondAttribute="leading" constant="15" id="vqs-fd-OtC"/>
                                     <constraint firstItem="btD-hC-Udw" firstAttribute="leading" secondItem="2eu-EI-mfA" secondAttribute="leading" constant="15" id="w7U-a0-RTZ"/>
                                 </constraints>
                             </view>
@@ -102,10 +111,13 @@
                             <constraint firstItem="mkP-Pr-hYa" firstAttribute="centerX" secondItem="Wh4-VO-otR" secondAttribute="centerX" id="iKO-bT-GEh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="profileLabel" destination="uxD-rs-ohy" id="CRC-cX-eCZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yn7-Ww-9v6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="717.60000000000002" y="134.48275862068968"/>
+            <point key="canvasLocation" x="588" y="135.38230884557723"/>
         </scene>
     </scenes>
     <resources>
