@@ -18,22 +18,12 @@ class PopUpViewController: UIViewController {
         /* 背景色の設定 */
         // self.view.backgroundColor = UIColor.black
         
+        
+        
         self.showAnimate()
         
     }
-    
-    @IBOutlet weak var profileLabel: UILabel!
-    
-    
-    
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        
-        
-        
-    }
-    
+    /******************** call first ********************/
     
     /******************** setting animation ********************/
     func showAnimate()
@@ -57,6 +47,16 @@ class PopUpViewController: UIViewController {
                 self.view.removeFromSuperview()
             }
         });
+    }
+    /******************** setting animation ********************/
+    
+    
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        
+        
+        
     }
     
 }
