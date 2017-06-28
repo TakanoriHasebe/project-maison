@@ -73,22 +73,11 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="profile text" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxD-rs-ohy">
-                                        <rect key="frame" x="15" y="312" width="345" height="20.5"/>
+                                        <rect key="frame" x="15" y="312" width="345" height="21"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lob-3l-9iD">
-                                        <rect key="frame" x="150" y="579" width="75" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Buttons ....">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="buttonAction:" destination="htK-fG-4yS" eventType="touchUpInside" id="zOr-ym-oUV"/>
-                                        </connections>
-                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ax-zK-xkl">
                                         <rect key="frame" x="214" y="240" width="146" height="64"/>
                                         <constraints>
@@ -99,15 +88,48 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZf-Kr-SAX">
+                                        <rect key="frame" x="49" y="579" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="S9j-gV-myd"/>
+                                            <constraint firstAttribute="width" constant="80" id="wUW-Oe-Hf5"/>
+                                        </constraints>
+                                        <state key="normal" image="Home"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E7Y-je-G0Y">
+                                        <rect key="frame" x="147" y="579" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="AS6-Eb-4GT"/>
+                                            <constraint firstAttribute="height" constant="80" id="rHl-An-sl2"/>
+                                        </constraints>
+                                        <state key="normal" image="Conversation"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKl-vu-pTR">
+                                        <rect key="frame" x="246" y="579" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="WXO-NY-ZZQ"/>
+                                            <constraint firstAttribute="width" constant="80" id="u93-r8-OCH"/>
+                                        </constraints>
+                                        <state key="normal" image="Close"/>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Loaction" highlightedImage="Loaction" translatesAutoresizingMaskIntoConstraints="NO" id="V4P-oa-rQ3">
+                                        <rect key="frame" x="213" y="261" width="20" height="24"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="V4P-oa-rQ3" firstAttribute="top" secondItem="mkP-Pr-hYa" secondAttribute="bottom" constant="56" id="6Yd-H5-NHl"/>
+                                    <constraint firstAttribute="trailing" secondItem="V4P-oa-rQ3" secondAttribute="trailing" constant="142" id="8ac-Ux-IcL"/>
                                     <constraint firstItem="uxD-rs-ohy" firstAttribute="top" secondItem="btD-hC-Udw" secondAttribute="bottom" constant="8" id="E7u-yh-bQL"/>
+                                    <constraint firstAttribute="trailing" secondItem="iKl-vu-pTR" secondAttribute="trailing" constant="49" id="H14-nZ-qic"/>
                                     <constraint firstItem="btD-hC-Udw" firstAttribute="top" secondItem="mkP-Pr-hYa" secondAttribute="bottom" constant="35" id="OMh-2n-3jB"/>
                                     <constraint firstItem="8ax-zK-xkl" firstAttribute="top" secondItem="mkP-Pr-hYa" secondAttribute="bottom" constant="35" id="UB2-ui-afC"/>
+                                    <constraint firstItem="YZf-Kr-SAX" firstAttribute="leading" secondItem="2eu-EI-mfA" secondAttribute="leading" constant="49" id="YAU-i2-CUr"/>
                                     <constraint firstItem="mkP-Pr-hYa" firstAttribute="top" secondItem="2eu-EI-mfA" secondAttribute="top" id="ZBB-iZ-TQ8"/>
+                                    <constraint firstItem="E7Y-je-G0Y" firstAttribute="centerX" secondItem="uxD-rs-ohy" secondAttribute="centerX" id="cJ2-xv-eah"/>
                                     <constraint firstAttribute="trailing" secondItem="8ax-zK-xkl" secondAttribute="trailing" constant="15" id="fc5-Qv-sAz"/>
                                     <constraint firstAttribute="trailing" secondItem="uxD-rs-ohy" secondAttribute="trailing" constant="15" id="jWO-4L-hFJ"/>
+                                    <constraint firstItem="V4P-oa-rQ3" firstAttribute="leading" secondItem="btD-hC-Udw" secondAttribute="trailing" constant="52" id="sKy-P3-bRs"/>
                                     <constraint firstItem="uxD-rs-ohy" firstAttribute="leading" secondItem="2eu-EI-mfA" secondAttribute="leading" constant="15" id="vqs-fd-OtC"/>
                                     <constraint firstItem="btD-hC-Udw" firstAttribute="leading" secondItem="2eu-EI-mfA" secondAttribute="leading" constant="15" id="w7U-a0-RTZ"/>
                                 </constraints>
@@ -116,8 +138,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="2eu-EI-mfA" secondAttribute="trailing" id="2dt-I1-1OC"/>
+                            <constraint firstItem="E7Y-je-G0Y" firstAttribute="top" secondItem="t7j-gQ-SRe" secondAttribute="bottom" constant="559" id="Bas-Oa-W4B"/>
                             <constraint firstItem="wWd-v7-5lm" firstAttribute="top" secondItem="2eu-EI-mfA" secondAttribute="bottom" id="C3B-5s-Dug"/>
+                            <constraint firstItem="iKl-vu-pTR" firstAttribute="top" secondItem="t7j-gQ-SRe" secondAttribute="bottom" constant="559" id="CHk-mA-4jE"/>
                             <constraint firstItem="2eu-EI-mfA" firstAttribute="leading" secondItem="Wh4-VO-otR" secondAttribute="leading" id="CbL-9k-g2r"/>
+                            <constraint firstItem="YZf-Kr-SAX" firstAttribute="top" secondItem="t7j-gQ-SRe" secondAttribute="bottom" constant="559" id="FGI-t4-4cl"/>
                             <constraint firstItem="mkP-Pr-hYa" firstAttribute="width" secondItem="Wh4-VO-otR" secondAttribute="width" id="PpT-1j-JST"/>
                             <constraint firstItem="2eu-EI-mfA" firstAttribute="top" secondItem="Wh4-VO-otR" secondAttribute="top" id="Vmo-Gm-gtn"/>
                             <constraint firstItem="mkP-Pr-hYa" firstAttribute="centerX" secondItem="Wh4-VO-otR" secondAttribute="centerX" id="iKO-bT-GEh"/>
@@ -133,6 +158,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Close" width="24" height="24"/>
+        <image name="Conversation" width="27" height="24"/>
+        <image name="Home" width="24" height="24"/>
+        <image name="Loaction" width="18" height="24"/>
         <image name="personImage0" width="341" height="226"/>
     </resources>
 </document>

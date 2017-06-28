@@ -13,11 +13,7 @@ class PopUpViewController: UIViewController {
     
     @IBOutlet weak var profileLabel: UILabel!
     
-    @IBAction func buttonAction(_ sender: UIButton) {
         
-        self.removeAnimate()
-        
-    }
     
     
     /* Main.storyboardを用いた場合には、画像の読み込み、自己紹介の読み込みについて */
