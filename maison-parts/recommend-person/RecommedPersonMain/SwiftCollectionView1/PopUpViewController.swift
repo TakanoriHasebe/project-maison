@@ -13,8 +13,6 @@
  
  */
 
-
-
 import UIKit
 
 class PopUpViewController: UIViewController {
@@ -26,7 +24,14 @@ class PopUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        /*
+        /******************** setting profileImage ********************/
+        /* 取得された画像の名前 */
+        var imageName: String!
+        
+        /* AppDelegateを通して、保存された名前を取得する */
+        let delegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+        imageName = delegate.profileImageNumber
+        
         /* 画面の横幅、縦幅を取得 */
         let screenWidth = CGFloat( UIScreen.main.bounds.size.width)
         let screenHeight = CGFloat(UIScreen.main.bounds.size.height)
@@ -45,7 +50,7 @@ class PopUpViewController: UIViewController {
         profileImageView = UIImageView(frame: CGRect(x: posX, y: posY, width: iWidth, height: iHeight))
         
         /* UIImageを作成 */
-        let myImage: UIImage = UIImage(named: "one.png")!
+        let myImage: UIImage = UIImage(named: imageName+".png")!
         
         /* 画像をUIImageViewに設定 */
         profileImageView.image = myImage
@@ -54,7 +59,8 @@ class PopUpViewController: UIViewController {
         
         /* UIImageViewをViewに追加 */
         self.view.addSubview(profileImageView)
-        */
+        /******************** setting profileImage ********************/
+        
  
         /* profile */
         /*

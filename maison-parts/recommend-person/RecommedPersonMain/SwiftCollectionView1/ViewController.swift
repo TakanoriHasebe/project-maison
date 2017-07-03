@@ -16,6 +16,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     /* ここをFirebaseから取得する */
     var images = ["one", "two", "three", "four", "five", "six"]
+    var profileName: String! 
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,12 +61,17 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                 cell?.transform = CGAffineTransform(scaleX: 0.98, y: 0.98)
             })
 
-            /* PopUp 動作 */
+            /* PopUp動作と画像の保存 */
+            profileName = images[index.row]
+            let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+            appDelegate.profileImageNumber = profileName
+            
             let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "sbPopUpID") as! PopUpViewController
             self.addChildViewController(popOverVC)
             popOverVC.view.frame = self.view.frame
             self.view.addSubview(popOverVC.view)
             popOverVC.didMove(toParentViewController: self)
+            /* PopUp動作と画像の保存 */
             
             
             if (gestureReconizer.state == UIGestureRecognizerState.ended) {
