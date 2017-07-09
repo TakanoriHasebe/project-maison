@@ -15,7 +15,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     @IBOutlet weak var collectionView: UICollectionView!
     
     /* ここをFirebaseから取得する */
-    var images = ["one", "two", "three", "four", "five", "six"]
+    var images = ["one", "two", "three", "four", "five", "six", "person", "one", "two", "three", "four", "five", "six", "person", "one", "two", "three", "four", "five", "six", "person2"]
     var profileName: String! 
     
     override func viewDidLoad() {
@@ -128,7 +128,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         return images.count
     }
 
-    
+    /**************** Resizeで表示できないか確認 ****************/
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CustomCell", for: indexPath) as! CustomCell
@@ -137,7 +137,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         cell.MyButtonImages.setBackgroundImage(UIImage(named: images[indexPath.row])!, for: UIControlState.normal)
         // cell.MyButtonImages.imageView?.image = UIImage(named: images[indexPath.row])
-        cell.MyButtonImages.contentMode = .scaleAspectFill
+        cell.MyButtonImages.contentMode = .scaleToFill
         
         // cell.myImage.image = UIImage(named: images[indexPath.row])
         // cell.myImage.contentMode = .scaleAspectFill

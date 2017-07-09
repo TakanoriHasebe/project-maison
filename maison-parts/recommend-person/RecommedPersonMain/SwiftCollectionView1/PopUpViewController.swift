@@ -24,6 +24,7 @@ class PopUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         /******************** setting profileImage ********************/
         /* 取得された画像の名前 */
         var imageName: String!
@@ -42,7 +43,7 @@ class PopUpViewController: UIViewController {
         
         /* UIImageViewのx,yを設定する */
         let posX: CGFloat = (self.view.bounds.width - iWidth)/2
-        let posY: CGFloat = 0
+        let posY: CGFloat = self.view.bounds.height / 18
         
         /* UIImage Viewを設定 */
         profileImageView = UIImageView(frame: CGRect(x: posX, y: posY, width: iWidth, height: iHeight))
@@ -53,7 +54,7 @@ class PopUpViewController: UIViewController {
         /* 画像をUIImageViewに設定 */
         profileImageView.image = myImage
         
-        profileImageView.contentMode = .scaleAspectFill
+        profileImageView.contentMode = .scaleAspectFit
         
         /* UIImageViewをViewに追加 */
         self.view.addSubview(profileImageView)
