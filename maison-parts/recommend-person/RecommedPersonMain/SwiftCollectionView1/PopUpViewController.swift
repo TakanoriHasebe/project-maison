@@ -35,8 +35,6 @@ class PopUpViewController: UIViewController {
         /* 画面の横幅、縦幅を取得 */
         let screenWidth = CGFloat( UIScreen.main.bounds.size.width)
         let screenHeight = CGFloat(UIScreen.main.bounds.size.height)
-        // print(screenWidth)
-        // print(screenHeight)
         
         /* UIImageViewのサイズを設定する */
         let iWidth: CGFloat = screenWidth
