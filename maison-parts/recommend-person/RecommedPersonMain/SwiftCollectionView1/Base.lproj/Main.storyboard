@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -88,8 +89,39 @@
                     <view key="view" contentMode="scaleToFill" id="7Ee-tu-Lua">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oqw-0H-YXe">
+                                <rect key="frame" x="0.0" y="45" width="375" height="172"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="oqw-0H-YXe" secondAttribute="height" multiplier="375:172" id="5W7-3K-zVX"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NMa-Me-SYZ">
+                                <rect key="frame" x="34" y="399" width="60" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="NMa-Me-SYZ" secondAttribute="height" multiplier="20:23" id="Nj5-DC-g8t"/>
+                                </constraints>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <action selector="back:" destination="g4s-i1-ju1" eventType="touchUpInside" id="zqq-kb-Feo"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NMa-Me-SYZ" firstAttribute="leading" secondItem="7Ee-tu-Lua" secondAttribute="leadingMargin" constant="18" id="0SF-rU-8pf"/>
+                            <constraint firstItem="NMa-Me-SYZ" firstAttribute="top" secondItem="oqw-0H-YXe" secondAttribute="bottom" constant="182" id="CZG-hg-ScM"/>
+                            <constraint firstItem="oqw-0H-YXe" firstAttribute="centerX" secondItem="7Ee-tu-Lua" secondAttribute="centerX" id="Kc0-og-zoA"/>
+                            <constraint firstItem="uQu-3C-0jh" firstAttribute="top" secondItem="oqw-0H-YXe" secondAttribute="bottom" constant="450" id="Qi7-Be-MHR"/>
+                            <constraint firstAttribute="trailing" secondItem="oqw-0H-YXe" secondAttribute="trailing" id="RRS-Tk-4uH"/>
+                            <constraint firstItem="oqw-0H-YXe" firstAttribute="top" secondItem="yB4-1K-9dp" secondAttribute="bottom" constant="25" id="ah8-3E-thW"/>
+                            <constraint firstItem="uQu-3C-0jh" firstAttribute="top" secondItem="NMa-Me-SYZ" secondAttribute="bottom" constant="199" id="hRk-aC-25x"/>
+                            <constraint firstItem="oqw-0H-YXe" firstAttribute="leading" secondItem="7Ee-tu-Lua" secondAttribute="leading" id="pph-8N-IYq"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="profileImage" destination="oqw-0H-YXe" id="r4Z-0z-lXQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ia-vB-OiS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

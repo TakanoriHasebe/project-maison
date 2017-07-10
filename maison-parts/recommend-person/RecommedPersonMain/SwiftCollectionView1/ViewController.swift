@@ -15,7 +15,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     @IBOutlet weak var collectionView: UICollectionView!
     
     /* ここをFirebaseから取得する */
-    var images = ["one", "two", "three", "four", "five", "six", "person", "one", "two", "three", "four", "five", "six", "person", "one", "two", "three", "four", "five", "six", "person2"]
+    var images = ["person0", "person1", "person2", "person3", "person4", "person5", "person6", "person7", "person8", "person9", "person10", "person11", "person12", "person13", "person14", "person15", "person16", "person17"]
     var profileName: String! 
     
     override func viewDidLoad() {
