@@ -6,6 +6,16 @@
 //  Copyright © 2017年 Takanori.H. All rights reserved.
 //
 
+/*****************
+ 
+ やるべきこと 画像系
+ 1. Firebaseへの画像の保存の仕方
+ 2. Firebaseから画像を取り出す
+ 3. Firebaseへ画像を保存する時に、Collection ViewとPopUpViewで２つの画像を保存
+ 4. Firebaseから画像を取り出す時に、Collection Viewに表示する画像とPopUpViewに表示する画像を分ける
+ 
+ ****************/
+
 //
 import UIKit
 
@@ -15,7 +25,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     @IBOutlet weak var collectionView: UICollectionView!
     
     /* ここをFirebaseから取得する */
-    var images = ["person0", "person1", "person2", "person3", "person4", "person5", "person6", "person7", "person8", "person9", "person10", "person11", "person12", "person13", "person14", "person15", "person16", "person17"]
+    var images = ["person0", "person1", "person2", "person3", "person4", "person5", "person6", "person7", "person8", "person9", "person10", "person11", "person12", "person13", "person14", "person15", "person16", "person17", "person18", "person19", "person20", "person21", "person22", "person23"]
     var profileName: String! 
     
     override func viewDidLoad() {
