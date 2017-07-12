@@ -21,6 +21,8 @@ class PopUpViewController: UIViewController {
     // @IBOutlet weak var profileLabel: UILabel!
     // private var profileImageView: UIImageView!
     
+    @IBOutlet weak var profileLabel: UILabel!
+    
     @IBOutlet weak var profileImage: UIImageView!
     
     override func viewDidLoad() {
@@ -38,10 +40,11 @@ class PopUpViewController: UIViewController {
         profileImage.image = image
         /******************** setting profileImage ********************/
         
-        /* profile */
-        /*
-        profileLabel.text = "was a cold December day when I chose the comfort of my bed over the hype of another Silicon Valley Christmas party. I spent the evening browsing the catalogue of men on Tinder, wondering if my soulmate could actually be a finger swipe away. When M’s profile came up my heart skipped a beat."
-        */
+        
+        
+        self.profileLabel.text = "以前、ゼロ初級日本語学習者への1時間目の授業「自己紹介」をアップしたら、かなり好評でしで、今回は2015年バージョンの動画です。学生も今回は3人います。ドイツ・韓国・フランスの学生。韓国の学生は少し日本語を知っています。高校のときの第二外国語で勉強したそうです。"
+        
+        
         
         /* Animation */
         self.showAnimate()

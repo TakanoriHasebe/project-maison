@@ -9,6 +9,7 @@
 /*****************
  
  やるべきこと 画像系
+ 0. profileLabelのFontについて
  1. Firebaseへの画像の保存の仕方
  2. Firebaseから画像を取り出す
  3. Firebaseへ画像を保存する時に、Collection ViewとPopUpViewで２つの画像を保存

@@ -14,6 +14,10 @@
 		F3989AF01EE6883C00538E6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3989AEF1EE6883C00538E6C /* Assets.xcassets */; };
 		F3989AF31EE6883C00538E6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3989AF11EE6883C00538E6C /* LaunchScreen.storyboard */; };
 		F3989AFB1EE68A0100538E6C /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3989AFA1EE68A0100538E6C /* CustomCell.swift */; };
+		F39A12C21F16035A00268D7A /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F39A12C11F16035A00268D7A /* Minecraft.ttf */; };
+		F39A12C41F1604E100268D7A /* Hannari.otf in Resources */ = {isa = PBXBuildFile; fileRef = F39A12C31F1604E100268D7A /* Hannari.otf */; };
+		F39A12C61F1609B000268D7A /* Hannari.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F39A12C51F1609B000268D7A /* Hannari.ttf */; };
+		F39A12C81F160ACF00268D7A /* OldeEnglish.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F39A12C71F160ACF00268D7A /* OldeEnglish.ttf */; };
 		F3DCF71F1F09FF30000C0B99 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DCF71E1F09FF30000C0B99 /* PopUpViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +31,10 @@
 		F3989AF21EE6883C00538E6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3989AF41EE6883C00538E6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3989AFA1EE68A0100538E6C /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		F39A12C11F16035A00268D7A /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
+		F39A12C31F1604E100268D7A /* Hannari.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hannari.otf; sourceTree = "<group>"; };
+		F39A12C51F1609B000268D7A /* Hannari.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hannari.ttf; sourceTree = "<group>"; };
+		F39A12C71F160ACF00268D7A /* OldeEnglish.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = OldeEnglish.ttf; sourceTree = "<group>"; };
 		F3DCF71E1F09FF30000C0B99 /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,6 +68,10 @@
 		F3989AE71EE6883C00538E6C /* SwiftCollectionView1 */ = {
 			isa = PBXGroup;
 			children = (
+				F39A12C71F160ACF00268D7A /* OldeEnglish.ttf */,
+				F39A12C51F1609B000268D7A /* Hannari.ttf */,
+				F39A12C31F1604E100268D7A /* Hannari.otf */,
+				F39A12C11F16035A00268D7A /* Minecraft.ttf */,
 				F3989AE81EE6883C00538E6C /* AppDelegate.swift */,
 				F3989AEA1EE6883C00538E6C /* ViewController.swift */,
 				F3DCF71E1F09FF30000C0B99 /* PopUpViewController.swift */,
@@ -133,9 +145,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F39A12C61F1609B000268D7A /* Hannari.ttf in Resources */,
 				F3989AF31EE6883C00538E6C /* LaunchScreen.storyboard in Resources */,
 				F3989AF01EE6883C00538E6C /* Assets.xcassets in Resources */,
+				F39A12C21F16035A00268D7A /* Minecraft.ttf in Resources */,
 				F3989AEE1EE6883C00538E6C /* Main.storyboard in Resources */,
+				F39A12C81F160ACF00268D7A /* OldeEnglish.ttf in Resources */,
+				F39A12C41F1604E100268D7A /* Hannari.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

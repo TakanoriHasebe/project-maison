@@ -10,6 +10,11 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Hannari.ttf">
+            <string>HannariMincho</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -97,7 +102,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NMa-Me-SYZ">
-                                <rect key="frame" x="34" y="399" width="60" height="69"/>
+                                <rect key="frame" x="34" y="447" width="104.5" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="NMa-Me-SYZ" secondAttribute="height" multiplier="20:23" id="Nj5-DC-g8t"/>
                                 </constraints>
@@ -106,21 +111,31 @@
                                     <action selector="back:" destination="g4s-i1-ju1" eventType="touchUpInside" id="zqq-kb-Feo"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" horizontalCompressionResistancePriority="748" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGN-nO-H6l">
+                                <rect key="frame" x="26" y="257" width="323" height="15"/>
+                                <fontDescription key="fontDescription" name="HannariMincho" family="HannariMincho" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="AGN-nO-H6l" secondAttribute="trailing" constant="10" id="0Gf-4Z-19D"/>
                             <constraint firstItem="NMa-Me-SYZ" firstAttribute="leading" secondItem="7Ee-tu-Lua" secondAttribute="leadingMargin" constant="18" id="0SF-rU-8pf"/>
-                            <constraint firstItem="NMa-Me-SYZ" firstAttribute="top" secondItem="oqw-0H-YXe" secondAttribute="bottom" constant="182" id="CZG-hg-ScM"/>
+                            <constraint firstItem="AGN-nO-H6l" firstAttribute="top" secondItem="oqw-0H-YXe" secondAttribute="bottom" constant="40" id="AIC-Oh-60p"/>
+                            <constraint firstItem="NMa-Me-SYZ" firstAttribute="top" secondItem="oqw-0H-YXe" secondAttribute="bottom" constant="230" id="CZG-hg-ScM"/>
                             <constraint firstItem="oqw-0H-YXe" firstAttribute="centerX" secondItem="7Ee-tu-Lua" secondAttribute="centerX" id="Kc0-og-zoA"/>
                             <constraint firstItem="uQu-3C-0jh" firstAttribute="top" secondItem="oqw-0H-YXe" secondAttribute="bottom" constant="450" id="Qi7-Be-MHR"/>
                             <constraint firstAttribute="trailing" secondItem="oqw-0H-YXe" secondAttribute="trailing" id="RRS-Tk-4uH"/>
                             <constraint firstItem="oqw-0H-YXe" firstAttribute="top" secondItem="yB4-1K-9dp" secondAttribute="bottom" constant="25" id="ah8-3E-thW"/>
-                            <constraint firstItem="uQu-3C-0jh" firstAttribute="top" secondItem="NMa-Me-SYZ" secondAttribute="bottom" constant="199" id="hRk-aC-25x"/>
+                            <constraint firstItem="uQu-3C-0jh" firstAttribute="top" secondItem="NMa-Me-SYZ" secondAttribute="bottom" constant="100" id="hRk-aC-25x"/>
+                            <constraint firstItem="AGN-nO-H6l" firstAttribute="leading" secondItem="7Ee-tu-Lua" secondAttribute="leadingMargin" constant="10" id="hW8-EY-izg"/>
                             <constraint firstItem="oqw-0H-YXe" firstAttribute="leading" secondItem="7Ee-tu-Lua" secondAttribute="leading" id="pph-8N-IYq"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="profileImage" destination="oqw-0H-YXe" id="r4Z-0z-lXQ"/>
+                        <outlet property="profileLabel" destination="AGN-nO-H6l" id="1wR-W7-Sfr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ia-vB-OiS" userLabel="First Responder" sceneMemberID="firstResponder"/>

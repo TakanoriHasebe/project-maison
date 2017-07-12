@@ -34,5 +34,12 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Hannari.ttf</string>
+		<string>Hannari.otf</string>
+		<string>OldeEnglish.ttf</string>
+		<string>Minecraft.ttf</string>
+	</array>
 </dict>
 </plist>
