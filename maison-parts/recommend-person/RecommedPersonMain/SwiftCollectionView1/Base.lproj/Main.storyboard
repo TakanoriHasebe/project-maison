@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Hannari.ttf">
+        <array key="Hannari.otf">
             <string>HannariMincho</string>
         </array>
     </customFonts>
@@ -96,10 +96,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oqw-0H-YXe">
-                                <rect key="frame" x="0.0" y="45" width="375" height="172"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="oqw-0H-YXe" secondAttribute="height" multiplier="375:172" id="5W7-3K-zVX"/>
-                                </constraints>
+                                <rect key="frame" x="0.0" y="70" width="375" height="147"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NMa-Me-SYZ">
                                 <rect key="frame" x="34" y="447" width="104.5" height="120"/>
@@ -117,6 +114,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iik-3G-Agz">
+                                <rect key="frame" x="75" y="35" width="225" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="BFU-79-nLy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -127,10 +133,14 @@
                             <constraint firstItem="oqw-0H-YXe" firstAttribute="centerX" secondItem="7Ee-tu-Lua" secondAttribute="centerX" id="Kc0-og-zoA"/>
                             <constraint firstItem="uQu-3C-0jh" firstAttribute="top" secondItem="oqw-0H-YXe" secondAttribute="bottom" constant="450" id="Qi7-Be-MHR"/>
                             <constraint firstAttribute="trailing" secondItem="oqw-0H-YXe" secondAttribute="trailing" id="RRS-Tk-4uH"/>
-                            <constraint firstItem="oqw-0H-YXe" firstAttribute="top" secondItem="yB4-1K-9dp" secondAttribute="bottom" constant="25" id="ah8-3E-thW"/>
+                            <constraint firstItem="Iik-3G-Agz" firstAttribute="centerX" secondItem="7Ee-tu-Lua" secondAttribute="centerX" id="Tth-xr-LDF"/>
+                            <constraint firstItem="oqw-0H-YXe" firstAttribute="top" secondItem="yB4-1K-9dp" secondAttribute="bottom" constant="50" id="ah8-3E-thW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Iik-3G-Agz" secondAttribute="trailing" constant="59" id="dpn-6j-eMg"/>
+                            <constraint firstItem="Iik-3G-Agz" firstAttribute="leading" secondItem="7Ee-tu-Lua" secondAttribute="leadingMargin" constant="59" id="gFk-7m-p2q"/>
                             <constraint firstItem="uQu-3C-0jh" firstAttribute="top" secondItem="NMa-Me-SYZ" secondAttribute="bottom" constant="100" id="hRk-aC-25x"/>
                             <constraint firstItem="AGN-nO-H6l" firstAttribute="leading" secondItem="7Ee-tu-Lua" secondAttribute="leadingMargin" constant="10" id="hW8-EY-izg"/>
                             <constraint firstItem="oqw-0H-YXe" firstAttribute="leading" secondItem="7Ee-tu-Lua" secondAttribute="leading" id="pph-8N-IYq"/>
+                            <constraint firstItem="Iik-3G-Agz" firstAttribute="top" secondItem="yB4-1K-9dp" secondAttribute="bottom" constant="15" id="zzE-6F-ROP"/>
                         </constraints>
                     </view>
                     <connections>
