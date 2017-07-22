@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Collection View Controller-->
         <scene sceneID="mik-am-IpS">
             <objects>
-                <viewController id="FYF-7k-mQc" sceneMemberID="viewController">
+                <viewController id="FYF-7k-mQc" customClass="CollectionViewController" customModule="SwiftUICollection" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8bI-hb-Zel"/>
                         <viewControllerLayoutGuide type="bottom" id="Nok-Nz-UKg"/>
@@ -20,18 +20,83 @@
                     <view key="view" contentMode="scaleToFill" id="bGD-V4-XYy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nbk-ir-v38">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gPV-a5-oYv">
+                                    <size key="itemSize" width="100" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Cq1-If-nhF" customClass="CustomCell" customModule="SwiftUICollection" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="10" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOY-BF-PG7">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="0dy-g1-bSj"/>
+                                                        <constraint firstAttribute="width" constant="100" id="aOt-Rp-Lfw"/>
+                                                    </constraints>
+                                                </button>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="UOY-BF-PG7" firstAttribute="centerY" secondItem="Cq1-If-nhF" secondAttribute="centerY" id="You-5m-e1U"/>
+                                            <constraint firstItem="UOY-BF-PG7" firstAttribute="centerX" secondItem="Cq1-If-nhF" secondAttribute="centerX" id="oke-qg-k4r"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="MyButtonImages" destination="UOY-BF-PG7" id="6rw-1S-vJX"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nbk-ir-v38" firstAttribute="top" secondItem="bGD-V4-XYy" secondAttribute="top" id="5Xc-ZV-rIp"/>
+                            <constraint firstItem="nbk-ir-v38" firstAttribute="leading" secondItem="bGD-V4-XYy" secondAttribute="leading" id="9w3-sx-YTz"/>
+                            <constraint firstAttribute="trailing" secondItem="nbk-ir-v38" secondAttribute="trailing" id="yBF-RS-y6i"/>
+                            <constraint firstItem="Nok-Nz-UKg" firstAttribute="top" secondItem="nbk-ir-v38" secondAttribute="bottom" id="zhh-Cw-rHV"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="search" id="7va-2G-brv"/>
+                    <connections>
+                        <outlet property="collectionView" destination="nbk-ir-v38" id="ZKq-CQ-A91"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mJ4-ms-grX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="374" y="146"/>
+            <point key="canvasLocation" x="373.60000000000002" y="145.27736131934034"/>
+        </scene>
+        <!--Pop Up View Controller-->
+        <scene sceneID="TXS-Sy-2Wm">
+            <objects>
+                <viewController id="1oe-qn-Fl2" customClass="PopUpViewController" customModule="SwiftUICollection" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SSf-ly-Gyg"/>
+                        <viewControllerLayoutGuide type="bottom" id="ePs-C7-uUW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ogU-mS-bIO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="COs-EA-YHU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1186" y="145"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="QaP-5i-JI5">
             <objects>
-                <viewController id="3CK-2r-Tzi" sceneMemberID="viewController">
+                <viewController id="3CK-2r-Tzi" customClass="ViewController" customModule="SwiftUICollection" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Z1b-ys-Jmf"/>
                         <viewControllerLayoutGuide type="bottom" id="Jfj-bf-ZBi"/>
