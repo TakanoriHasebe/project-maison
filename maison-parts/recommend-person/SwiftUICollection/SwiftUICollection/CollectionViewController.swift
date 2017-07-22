@@ -138,12 +138,7 @@ class CollectionViewController: UIViewController, UICollectionViewDelegate, UICo
         cell.layer.cornerRadius = 50
         
         cell.MyButtonImages.setBackgroundImage(UIImage(named: images[indexPath.row])!, for: UIControlState.normal)
-        // cell.MyButtonImages.imageView?.image = UIImage(named: images[indexPath.row])
         cell.MyButtonImages.contentMode = .scaleToFill
-        
-        // cell.myImage.image = UIImage(named: images[indexPath.row])
-        // cell.myImage.contentMode = .scaleAspectFill
-        
         
         return cell
         
