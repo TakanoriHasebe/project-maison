@@ -40,7 +40,6 @@ class ViewController: UIViewController {
             self.addItemView.alpha = 1
             self.addItemView.transform = CGAffineTransform.identity
         }
-
         
     }
     
