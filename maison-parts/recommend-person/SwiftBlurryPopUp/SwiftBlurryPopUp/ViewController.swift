@@ -1,10 +1,17 @@
 //
 //  ViewController.swift
-//  SwiftBlurryPopUpView
+//  SwiftBlurryPopUp
 //
 //  Created by Takanori.H on 2017/07/27.
 //  Copyright © 2017年 Takanori.H. All rights reserved.
 //
+
+/*****************
+ 
+ Blurをつけるときに、ControllerとUIVisualEffectViewの結びつけに気をつける。
+ コード自体は動作に問題を出さない。
+ 
+ *****************/
 
 import UIKit
 
@@ -14,7 +21,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var visualEffectView: UIVisualEffectView!
     
-    var effect: UIVisualEffect!
+    var effect:UIVisualEffect!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,11 +32,10 @@ class ViewController: UIViewController {
         addItemView.layer.cornerRadius = 5
         
     }
-    
+
     func animateIn(){
         
         self.view.addSubview(addItemView)
-        
         addItemView.center = self.view.center
         
         addItemView.transform = CGAffineTransform.init(scaleX: 1.3, y: 1.3)
@@ -43,21 +49,32 @@ class ViewController: UIViewController {
         
     }
     
+    func animateOut() {
+        UIView.animate(withDuration: 0.3, animations: {
+            self.addItemView.transform = CGAffineTransform.init(scaleX: 1.3, y: 1.3)
+            self.addItemView.alpha = 0
+            
+            self.visualEffectView.effect = nil
+            
+        }) { (success:Bool) in
+            self.addItemView.removeFromSuperview()
+        }
+    }
+    
     @IBAction func addItem(_ sender: AnyObject) {
         
         animateIn()
         
     }
     
-    @IBAction func dismissPopUp(_ sender: AnyObject) {
+    @IBAction func dissmissPopUp(_ sender: AnyObject) {
         
-        
+        animateOut()
         
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        
-        
         
     }
 

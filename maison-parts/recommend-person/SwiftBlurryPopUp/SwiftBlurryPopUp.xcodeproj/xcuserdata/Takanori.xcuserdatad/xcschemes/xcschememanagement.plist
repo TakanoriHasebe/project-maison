@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>SwiftBlurryPopUpView.xcscheme</key>
+		<key>SwiftBlurryPopUp.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>F31480191F29B90D007EA841</key>
+		<key>F309D5C51F29E8E000D10D89</key>
 		<dict>
 			<key>primary</key>
 			<true/>

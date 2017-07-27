@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  SwiftBlurryPopUpView
+//  SwiftBlurryPopUp
 //
 //  Created by Takanori.H on 2017/07/27.
 //  Copyright © 2017年 Takanori.H. All rights reserved.

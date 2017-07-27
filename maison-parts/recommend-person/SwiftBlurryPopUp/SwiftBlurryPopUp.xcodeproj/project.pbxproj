@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F314801E1F29B90D007EA841 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314801D1F29B90D007EA841 /* AppDelegate.swift */; };
-		F31480201F29B90D007EA841 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314801F1F29B90D007EA841 /* ViewController.swift */; };
-		F31480231F29B90D007EA841 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F31480211F29B90D007EA841 /* Main.storyboard */; };
-		F31480251F29B90D007EA841 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F31480241F29B90D007EA841 /* Assets.xcassets */; };
-		F31480281F29B90D007EA841 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F31480261F29B90D007EA841 /* LaunchScreen.storyboard */; };
+		F309D5CA1F29E8E000D10D89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F309D5C91F29E8E000D10D89 /* AppDelegate.swift */; };
+		F309D5CC1F29E8E000D10D89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F309D5CB1F29E8E000D10D89 /* ViewController.swift */; };
+		F309D5CF1F29E8E000D10D89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F309D5CD1F29E8E000D10D89 /* Main.storyboard */; };
+		F309D5D11F29E8E000D10D89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F309D5D01F29E8E000D10D89 /* Assets.xcassets */; };
+		F309D5D41F29E8E000D10D89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F309D5D21F29E8E000D10D89 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F314801A1F29B90D007EA841 /* SwiftBlurryPopUpView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftBlurryPopUpView.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F314801D1F29B90D007EA841 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F314801F1F29B90D007EA841 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F31480221F29B90D007EA841 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F31480241F29B90D007EA841 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F31480271F29B90D007EA841 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F31480291F29B90D007EA841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F309D5C61F29E8E000D10D89 /* SwiftBlurryPopUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftBlurryPopUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F309D5C91F29E8E000D10D89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F309D5CB1F29E8E000D10D89 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F309D5CE1F29E8E000D10D89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F309D5D01F29E8E000D10D89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F309D5D31F29E8E000D10D89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F309D5D51F29E8E000D10D89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F31480171F29B90D007EA841 /* Frameworks */ = {
+		F309D5C31F29E8E000D10D89 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,73 +35,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F31480111F29B90D007EA841 = {
+		F309D5BD1F29E8E000D10D89 = {
 			isa = PBXGroup;
 			children = (
-				F314801C1F29B90D007EA841 /* SwiftBlurryPopUpView */,
-				F314801B1F29B90D007EA841 /* Products */,
+				F309D5C81F29E8E000D10D89 /* SwiftBlurryPopUp */,
+				F309D5C71F29E8E000D10D89 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		F314801B1F29B90D007EA841 /* Products */ = {
+		F309D5C71F29E8E000D10D89 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F314801A1F29B90D007EA841 /* SwiftBlurryPopUpView.app */,
+				F309D5C61F29E8E000D10D89 /* SwiftBlurryPopUp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F314801C1F29B90D007EA841 /* SwiftBlurryPopUpView */ = {
+		F309D5C81F29E8E000D10D89 /* SwiftBlurryPopUp */ = {
 			isa = PBXGroup;
 			children = (
-				F314801D1F29B90D007EA841 /* AppDelegate.swift */,
-				F314801F1F29B90D007EA841 /* ViewController.swift */,
-				F31480211F29B90D007EA841 /* Main.storyboard */,
-				F31480241F29B90D007EA841 /* Assets.xcassets */,
-				F31480261F29B90D007EA841 /* LaunchScreen.storyboard */,
-				F31480291F29B90D007EA841 /* Info.plist */,
+				F309D5C91F29E8E000D10D89 /* AppDelegate.swift */,
+				F309D5CB1F29E8E000D10D89 /* ViewController.swift */,
+				F309D5CD1F29E8E000D10D89 /* Main.storyboard */,
+				F309D5D01F29E8E000D10D89 /* Assets.xcassets */,
+				F309D5D21F29E8E000D10D89 /* LaunchScreen.storyboard */,
+				F309D5D51F29E8E000D10D89 /* Info.plist */,
 			);
-			path = SwiftBlurryPopUpView;
+			path = SwiftBlurryPopUp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F31480191F29B90D007EA841 /* SwiftBlurryPopUpView */ = {
+		F309D5C51F29E8E000D10D89 /* SwiftBlurryPopUp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F314802C1F29B90D007EA841 /* Build configuration list for PBXNativeTarget "SwiftBlurryPopUpView" */;
+			buildConfigurationList = F309D5D81F29E8E000D10D89 /* Build configuration list for PBXNativeTarget "SwiftBlurryPopUp" */;
 			buildPhases = (
-				F31480161F29B90D007EA841 /* Sources */,
-				F31480171F29B90D007EA841 /* Frameworks */,
-				F31480181F29B90D007EA841 /* Resources */,
+				F309D5C21F29E8E000D10D89 /* Sources */,
+				F309D5C31F29E8E000D10D89 /* Frameworks */,
+				F309D5C41F29E8E000D10D89 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SwiftBlurryPopUpView;
-			productName = SwiftBlurryPopUpView;
-			productReference = F314801A1F29B90D007EA841 /* SwiftBlurryPopUpView.app */;
+			name = SwiftBlurryPopUp;
+			productName = SwiftBlurryPopUp;
+			productReference = F309D5C61F29E8E000D10D89 /* SwiftBlurryPopUp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F31480121F29B90D007EA841 /* Project object */ = {
+		F309D5BE1F29E8E000D10D89 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Takanori.H;
 				TargetAttributes = {
-					F31480191F29B90D007EA841 = {
+					F309D5C51F29E8E000D10D89 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = BN463B3322;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = F31480151F29B90D007EA841 /* Build configuration list for PBXProject "SwiftBlurryPopUpView" */;
+			buildConfigurationList = F309D5C11F29E8E000D10D89 /* Build configuration list for PBXProject "SwiftBlurryPopUp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -109,54 +109,54 @@
 				en,
 				Base,
 			);
-			mainGroup = F31480111F29B90D007EA841;
-			productRefGroup = F314801B1F29B90D007EA841 /* Products */;
+			mainGroup = F309D5BD1F29E8E000D10D89;
+			productRefGroup = F309D5C71F29E8E000D10D89 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F31480191F29B90D007EA841 /* SwiftBlurryPopUpView */,
+				F309D5C51F29E8E000D10D89 /* SwiftBlurryPopUp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F31480181F29B90D007EA841 /* Resources */ = {
+		F309D5C41F29E8E000D10D89 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F31480281F29B90D007EA841 /* LaunchScreen.storyboard in Resources */,
-				F31480251F29B90D007EA841 /* Assets.xcassets in Resources */,
-				F31480231F29B90D007EA841 /* Main.storyboard in Resources */,
+				F309D5D41F29E8E000D10D89 /* LaunchScreen.storyboard in Resources */,
+				F309D5D11F29E8E000D10D89 /* Assets.xcassets in Resources */,
+				F309D5CF1F29E8E000D10D89 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F31480161F29B90D007EA841 /* Sources */ = {
+		F309D5C21F29E8E000D10D89 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F31480201F29B90D007EA841 /* ViewController.swift in Sources */,
-				F314801E1F29B90D007EA841 /* AppDelegate.swift in Sources */,
+				F309D5CC1F29E8E000D10D89 /* ViewController.swift in Sources */,
+				F309D5CA1F29E8E000D10D89 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F31480211F29B90D007EA841 /* Main.storyboard */ = {
+		F309D5CD1F29E8E000D10D89 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F31480221F29B90D007EA841 /* Base */,
+				F309D5CE1F29E8E000D10D89 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		F31480261F29B90D007EA841 /* LaunchScreen.storyboard */ = {
+		F309D5D21F29E8E000D10D89 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F31480271F29B90D007EA841 /* Base */,
+				F309D5D31F29E8E000D10D89 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -164,7 +164,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		F314802A1F29B90D007EA841 /* Debug */ = {
+		F309D5D61F29E8E000D10D89 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -214,7 +214,7 @@
 			};
 			name = Debug;
 		};
-		F314802B1F29B90D007EA841 /* Release */ = {
+		F309D5D71F29E8E000D10D89 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -257,27 +257,27 @@
 			};
 			name = Release;
 		};
-		F314802D1F29B90D007EA841 /* Debug */ = {
+		F309D5D91F29E8E000D10D89 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BN463B3322;
-				INFOPLIST_FILE = SwiftBlurryPopUpView/Info.plist;
+				INFOPLIST_FILE = SwiftBlurryPopUp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasebe.SwiftBlurryPopUpView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasebe.SwiftBlurryPopUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		F314802E1F29B90D007EA841 /* Release */ = {
+		F309D5DA1F29E8E000D10D89 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BN463B3322;
-				INFOPLIST_FILE = SwiftBlurryPopUpView/Info.plist;
+				INFOPLIST_FILE = SwiftBlurryPopUp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasebe.SwiftBlurryPopUpView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasebe.SwiftBlurryPopUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -286,24 +286,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F31480151F29B90D007EA841 /* Build configuration list for PBXProject "SwiftBlurryPopUpView" */ = {
+		F309D5C11F29E8E000D10D89 /* Build configuration list for PBXProject "SwiftBlurryPopUp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F314802A1F29B90D007EA841 /* Debug */,
-				F314802B1F29B90D007EA841 /* Release */,
+				F309D5D61F29E8E000D10D89 /* Debug */,
+				F309D5D71F29E8E000D10D89 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F314802C1F29B90D007EA841 /* Build configuration list for PBXNativeTarget "SwiftBlurryPopUpView" */ = {
+		F309D5D81F29E8E000D10D89 /* Build configuration list for PBXNativeTarget "SwiftBlurryPopUp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F314802D1F29B90D007EA841 /* Debug */,
-				F314802E1F29B90D007EA841 /* Release */,
+				F309D5D91F29E8E000D10D89 /* Debug */,
+				F309D5DA1F29E8E000D10D89 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = F31480121F29B90D007EA841 /* Project object */;
+	rootObject = F309D5BE1F29E8E000D10D89 /* Project object */;
 }

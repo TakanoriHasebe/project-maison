@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F31480191F29B90D007EA841"
-               BuildableName = "SwiftBlurryPopUpView.app"
-               BlueprintName = "SwiftBlurryPopUpView"
-               ReferencedContainer = "container:SwiftBlurryPopUpView.xcodeproj">
+               BlueprintIdentifier = "F309D5C51F29E8E000D10D89"
+               BuildableName = "SwiftBlurryPopUp.app"
+               BlueprintName = "SwiftBlurryPopUp"
+               ReferencedContainer = "container:SwiftBlurryPopUp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F31480191F29B90D007EA841"
-            BuildableName = "SwiftBlurryPopUpView.app"
-            BlueprintName = "SwiftBlurryPopUpView"
-            ReferencedContainer = "container:SwiftBlurryPopUpView.xcodeproj">
+            BlueprintIdentifier = "F309D5C51F29E8E000D10D89"
+            BuildableName = "SwiftBlurryPopUp.app"
+            BlueprintName = "SwiftBlurryPopUp"
+            ReferencedContainer = "container:SwiftBlurryPopUp.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F31480191F29B90D007EA841"
-            BuildableName = "SwiftBlurryPopUpView.app"
-            BlueprintName = "SwiftBlurryPopUpView"
-            ReferencedContainer = "container:SwiftBlurryPopUpView.xcodeproj">
+            BlueprintIdentifier = "F309D5C51F29E8E000D10D89"
+            BuildableName = "SwiftBlurryPopUp.app"
+            BlueprintName = "SwiftBlurryPopUp"
+            ReferencedContainer = "container:SwiftBlurryPopUp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F31480191F29B90D007EA841"
-            BuildableName = "SwiftBlurryPopUpView.app"
-            BlueprintName = "SwiftBlurryPopUpView"
-            ReferencedContainer = "container:SwiftBlurryPopUpView.xcodeproj">
+            BlueprintIdentifier = "F309D5C51F29E8E000D10D89"
+            BuildableName = "SwiftBlurryPopUp.app"
+            BlueprintName = "SwiftBlurryPopUp"
+            ReferencedContainer = "container:SwiftBlurryPopUp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
