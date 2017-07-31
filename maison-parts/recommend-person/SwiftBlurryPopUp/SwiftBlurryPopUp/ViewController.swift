@@ -17,22 +17,29 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    /* Viewに対する動作を記述している */
     @IBOutlet var addItemView: UIView!
     
+    /* BlurのAction */
     @IBOutlet weak var visualEffectView: UIVisualEffectView!
     
+    /* コピペ */
     var effect:UIVisualEffect!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        /* コピペ */
         effect = visualEffectView.effect
         visualEffectView.effect = nil
         
+        /* コピペ */
         addItemView.layer.cornerRadius = 5
         
     }
 
+    /* コピペ */
     func animateIn(){
         
         self.view.addSubview(addItemView)
@@ -49,6 +56,7 @@ class ViewController: UIViewController {
         
     }
     
+    /* コピペ */
     func animateOut() {
         UIView.animate(withDuration: 0.3, animations: {
             self.addItemView.transform = CGAffineTransform.init(scaleX: 1.3, y: 1.3)
@@ -61,12 +69,14 @@ class ViewController: UIViewController {
         }
     }
     
+    /* コピペ */
     @IBAction func addItem(_ sender: AnyObject) {
         
         animateIn()
         
     }
     
+    /* コピペ */
     @IBAction func dissmissPopUp(_ sender: AnyObject) {
         
         animateOut()
