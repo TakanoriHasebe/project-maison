@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="QxO-Mm-rvn">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <rect key="frame" x="0.0" y="10" width="369" height="608"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="QxO-Mm-rvn" secondAttribute="height" multiplier="125:206" id="nWU-sN-9SQ"/>
@@ -64,7 +64,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="QxO-Mm-rvn" firstAttribute="top" secondItem="xzE-4b-kp5" secondAttribute="top" id="NhQ-dm-oNR"/>
+                            <constraint firstItem="QxO-Mm-rvn" firstAttribute="top" secondItem="xzE-4b-kp5" secondAttribute="top" constant="10" id="NhQ-dm-oNR"/>
                             <constraint firstAttribute="trailing" secondItem="QxO-Mm-rvn" secondAttribute="trailing" id="j7r-Jg-5Js"/>
                             <constraint firstItem="QxO-Mm-rvn" firstAttribute="leading" secondItem="xzE-4b-kp5" secondAttribute="leading" id="j82-Gl-FfZ"/>
                             <constraint firstItem="wal-3K-6tz" firstAttribute="top" secondItem="QxO-Mm-rvn" secondAttribute="bottom" id="uOn-3c-dKh"/>
@@ -96,7 +96,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fRl-e0-zg1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="537" y="-204"/>
+            <point key="canvasLocation" x="537" y="-634"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="dYm-6E-k1F">

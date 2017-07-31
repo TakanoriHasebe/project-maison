@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UIGestureRecognizerDelegate{
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
     var images = ["one", "two", "three", "four", "five", "six"]
@@ -31,6 +32,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
     }
     
+    
     /* LongPressの時の動作 */
     func handleLongPress(_ gestureReconizer: UILongPressGestureRecognizer) {
         /*
@@ -51,8 +53,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                 UICollectionView.animate(withDuration: 0.0, animations: {
                     cell?.transform = CGAffineTransform(scaleX: 0.98, y: 0.98)
                 })
+                
                 print(index.row)
             }else if (gestureReconizer.state == UIGestureRecognizerState.ended) {
+                
                 cell?.transform = CGAffineTransform.identity
                 print("Long Press Over")
             }
