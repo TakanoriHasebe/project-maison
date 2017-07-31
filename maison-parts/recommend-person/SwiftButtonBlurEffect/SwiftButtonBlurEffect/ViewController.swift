@@ -10,7 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var backgroundIMG: UIImageView!
     
+    @IBAction func ButtonTapped(_ sender: Any) {
+        
+        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.light)
+        let blurView = UIVisualEffectView(effect: blurEffect)
+        blurView.frame = backgroundIMG.bounds
+        backgroundIMG.addSubview(blurView)
+
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +28,9 @@ class ViewController: UIViewController {
         
         
     }
+    
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
