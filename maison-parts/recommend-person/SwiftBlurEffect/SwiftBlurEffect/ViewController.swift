@@ -21,6 +21,8 @@ class ViewController: UIViewController {
     /* PopUpViewに対すつOutlet */
     @IBOutlet var addItemView: UIView!
     
+    @IBOutlet weak var backgoundImg: UIImageView!
+    
     /* blurに対するOutlet */
     @IBOutlet weak var visualEffectView: UIVisualEffectView!
     
@@ -54,12 +56,13 @@ class ViewController: UIViewController {
         
         /************ コピペ ***********/
         /* Animationの設定 */
+        self.backgoundImg.addBlurEffect() /* Extensionを用いたBlur */
         addItemView.transform = CGAffineTransform.init(scaleX: 1.3, y: 1.3)
         addItemView.alpha = 0
         
         UIView.animate(withDuration: 0.4) {
             // self.view.addSubview(blurView) /* code */
-            self.visualEffectView.effect = self.effect
+            // self.visualEffectView.effect = self.effect /* IBOutlet */
             self.view.addSubview(self.addItemView)
             self.addItemView.alpha = 1
             self.addItemView.transform = CGAffineTransform.identity
@@ -75,7 +78,7 @@ class ViewController: UIViewController {
             self.addItemView.transform = CGAffineTransform.init(scaleX: 1.3, y: 1.3)
             self.addItemView.alpha = 0
             
-            self.visualEffectView.effect = nil
+            // self.visualEffectView.effect = nil
             
         }) { (success:Bool) in
             
@@ -92,10 +95,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        /* コピペ */
+        /*
+        /************ コピペ ***********/
         effect = visualEffectView.effect
         visualEffectView.effect = nil
-        
+        /************ コピペ ***********/
+        */
+ 
         addItemView.layer.cornerRadius = 5
         
     }
@@ -108,5 +114,22 @@ class ViewController: UIViewController {
     }
 
 
+}
+
+extension UIImageView
+{
+    func addBlurEffect()
+    {
+        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.light)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        blurEffectView.frame = self.bounds
+        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        self.addSubview(blurEffectView)
+        
+        /*
+        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight] // for supporting device rotation
+        self.addSubview(blurEffectView)
+        */
+    }
 }
 

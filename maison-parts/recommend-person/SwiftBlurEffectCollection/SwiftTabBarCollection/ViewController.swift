@@ -12,6 +12,14 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    /* PopUpに対するOutlet */
+    @IBOutlet var addItemView: UIView!
+    
+    @IBOutlet weak var visualEffectView: UIVisualEffectView!
+    
+    /* blurEffectの制御 */
+    var effect:UIVisualEffect!
+    
     var images = ["one", "two", "three", "four", "five", "six"]
 
     override func viewDidLoad() {
@@ -29,6 +37,12 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         self.collectionView.addGestureRecognizer(lpgr)
         
         self.collectionView.isUserInteractionEnabled = true
+        
+        /* コピペ */
+        // effect = visualEffectView.effect
+        // visualEffectView.effect = nil
+        
+        addItemView.layer.cornerRadius = 5
         
     }
     
@@ -54,11 +68,33 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                     cell?.transform = CGAffineTransform(scaleX: 0.98, y: 0.98)
                 })
                 
+                /************ コピペ ***********/
+                /* addItemViewの初期設定 */
+                addItemView.center = self.view.center
+                // self.view.addSubview(addItemView)
+                /************ コピペ ***********/
+                
+                /************ コピペ ***********/
+                /* Animationの設定 */
+                addItemView.transform = CGAffineTransform.init(scaleX: 1.3, y: 1.3)
+                addItemView.alpha = 0
+                
+                UIView.animate(withDuration: 0.4) {
+                    self.visualEffectView.effect = self.effect
+                    self.view.addSubview(self.addItemView)
+                    self.addItemView.alpha = 1
+                    self.addItemView.transform = CGAffineTransform.identity
+                }
+                /************ コピペ ***********/
+                
+                
                 print(index.row)
+                
             }else if (gestureReconizer.state == UIGestureRecognizerState.ended) {
                 
                 cell?.transform = CGAffineTransform.identity
                 print("Long Press Over")
+                
             }
             
             
