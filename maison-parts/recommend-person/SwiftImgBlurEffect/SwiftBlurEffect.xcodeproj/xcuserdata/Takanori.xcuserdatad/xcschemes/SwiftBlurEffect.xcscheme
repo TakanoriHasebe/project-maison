@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F31C3C871F307269003E08B6"
+               BlueprintIdentifier = "F3E206021F2F15EC00319719"
                BuildableName = "SwiftBlurEffect.app"
                BlueprintName = "SwiftBlurEffect"
                ReferencedContainer = "container:SwiftBlurEffect.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F31C3C871F307269003E08B6"
+            BlueprintIdentifier = "F3E206021F2F15EC00319719"
             BuildableName = "SwiftBlurEffect.app"
             BlueprintName = "SwiftBlurEffect"
             ReferencedContainer = "container:SwiftBlurEffect.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F31C3C871F307269003E08B6"
+            BlueprintIdentifier = "F3E206021F2F15EC00319719"
             BuildableName = "SwiftBlurEffect.app"
             BlueprintName = "SwiftBlurEffect"
             ReferencedContainer = "container:SwiftBlurEffect.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F31C3C871F307269003E08B6"
+            BlueprintIdentifier = "F3E206021F2F15EC00319719"
             BuildableName = "SwiftBlurEffect.app"
             BlueprintName = "SwiftBlurEffect"
             ReferencedContainer = "container:SwiftBlurEffect.xcodeproj">

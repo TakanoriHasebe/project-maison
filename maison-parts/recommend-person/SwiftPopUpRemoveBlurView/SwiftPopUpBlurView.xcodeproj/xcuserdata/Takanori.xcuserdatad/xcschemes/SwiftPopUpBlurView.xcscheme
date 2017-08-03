@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F31C3C871F307269003E08B6"
-               BuildableName = "SwiftBlurEffect.app"
-               BlueprintName = "SwiftBlurEffect"
-               ReferencedContainer = "container:SwiftBlurEffect.xcodeproj">
+               BlueprintIdentifier = "F37136611F3054D600FD2DA8"
+               BuildableName = "SwiftPopUpBlurView.app"
+               BlueprintName = "SwiftPopUpBlurView"
+               ReferencedContainer = "container:SwiftPopUpBlurView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F31C3C871F307269003E08B6"
-            BuildableName = "SwiftBlurEffect.app"
-            BlueprintName = "SwiftBlurEffect"
-            ReferencedContainer = "container:SwiftBlurEffect.xcodeproj">
+            BlueprintIdentifier = "F37136611F3054D600FD2DA8"
+            BuildableName = "SwiftPopUpBlurView.app"
+            BlueprintName = "SwiftPopUpBlurView"
+            ReferencedContainer = "container:SwiftPopUpBlurView.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F31C3C871F307269003E08B6"
-            BuildableName = "SwiftBlurEffect.app"
-            BlueprintName = "SwiftBlurEffect"
-            ReferencedContainer = "container:SwiftBlurEffect.xcodeproj">
+            BlueprintIdentifier = "F37136611F3054D600FD2DA8"
+            BuildableName = "SwiftPopUpBlurView.app"
+            BlueprintName = "SwiftPopUpBlurView"
+            ReferencedContainer = "container:SwiftPopUpBlurView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F31C3C871F307269003E08B6"
-            BuildableName = "SwiftBlurEffect.app"
-            BlueprintName = "SwiftBlurEffect"
-            ReferencedContainer = "container:SwiftBlurEffect.xcodeproj">
+            BlueprintIdentifier = "F37136611F3054D600FD2DA8"
+            BuildableName = "SwiftPopUpBlurView.app"
+            BlueprintName = "SwiftPopUpBlurView"
+            ReferencedContainer = "container:SwiftPopUpBlurView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  SwiftBlurEffect
+//  SwiftPopUpBlurView
 //
 //  Created by Takanori.H on 2017/08/01.
 //  Copyright © 2017年 Takanori.H. All rights reserved.

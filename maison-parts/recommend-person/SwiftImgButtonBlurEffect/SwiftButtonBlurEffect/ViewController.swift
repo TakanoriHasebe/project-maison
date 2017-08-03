@@ -18,9 +18,11 @@ class ViewController: UIViewController {
         let blurView = UIVisualEffectView(effect: blurEffect)
         blurView.frame = backgroundIMG.bounds
         backgroundIMG.addSubview(blurView)
-
         
     }
+    
+    
+        
     
     override func viewDidLoad() {
         super.viewDidLoad()
