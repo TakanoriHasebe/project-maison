@@ -6,12 +6,25 @@
 //  Copyright © 2017年 Takanori.H. All rights reserved.
 //
 
+/******************************
+
+ Blurをつける時にVibrancyが上のチェックには入っていないが
+ 下のチェックには入っている。
+ 
+******************************/
+
+
 import UIKit
 
 class ViewController: UIViewController {
 
+    /* PopUpViewに対すつOutlet */
     @IBOutlet var addItemView: UIView!
     
+    /* blurに対するOutlet */
+    @IBOutlet weak var visualEffectView: UIVisualEffectView!
+    
+    /* blurEffectの制御 */
     var effect:UIVisualEffect!
     
     /* Effectボタンを押すとBlurがでる */
@@ -20,6 +33,7 @@ class ViewController: UIViewController {
         /*
         /************ コピペ ***********/
         /* BlurEffectの初期設定 */
+        /* codeで記述している */
         let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.light)
         let blurView = UIVisualEffectView(effect: blurEffect)
         /* Blurのかける範囲 */
@@ -44,7 +58,8 @@ class ViewController: UIViewController {
         addItemView.alpha = 0
         
         UIView.animate(withDuration: 0.4) {
-            // self.view.addSubview(blurView)
+            // self.view.addSubview(blurView) /* code */
+            self.visualEffectView.effect = self.effect
             self.view.addSubview(self.addItemView)
             self.addItemView.alpha = 1
             self.addItemView.transform = CGAffineTransform.identity
@@ -60,6 +75,8 @@ class ViewController: UIViewController {
             self.addItemView.transform = CGAffineTransform.init(scaleX: 1.3, y: 1.3)
             self.addItemView.alpha = 0
             
+            self.visualEffectView.effect = nil
+            
         }) { (success:Bool) in
             
             
@@ -74,6 +91,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        /* コピペ */
+        effect = visualEffectView.effect
+        visualEffectView.effect = nil
         
         addItemView.layer.cornerRadius = 5
         
