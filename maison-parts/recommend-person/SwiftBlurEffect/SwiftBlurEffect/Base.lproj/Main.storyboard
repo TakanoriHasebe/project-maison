@@ -53,7 +53,6 @@
                             <autoresizingMask key="autoresizingMask" heightSizable="YES"/>
                             <state key="normal" title="Done"/>
                             <connections>
-                                <action selector="BlurEffect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dfo-r1-9xc"/>
                                 <action selector="removeBlurEffect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z8r-Le-cYi"/>
                             </connections>
                         </button>
