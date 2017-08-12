@@ -50,6 +50,7 @@ class ViewController: UIViewController {
     /* BlurエフェクトとViewを取り外す */
     @IBAction func removeBlurEffect(_ sender: Any) {
         
+        self.backgoundImg.removeBlurEffect()
         UIView.animate(withDuration: 0.3, animations: {
             self.addItemView.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
             self.addItemView.alpha = 0
@@ -58,7 +59,6 @@ class ViewController: UIViewController {
             
         }) { (success:Bool) in
             
-            self.backgoundImg.removeBlurEffect()
             self.addItemView.removeFromSuperview()
             
         }
