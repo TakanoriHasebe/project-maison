@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F38CCF6F1F3EC12C006F493B /* firstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38CCF6E1F3EC12C006F493B /* firstViewController.swift */; };
 		F39596C71F231D81003DCE52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39596C61F231D81003DCE52 /* AppDelegate.swift */; };
 		F39596C91F231D81003DCE52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39596C81F231D81003DCE52 /* ViewController.swift */; };
 		F39596CC1F231D81003DCE52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F39596CA1F231D81003DCE52 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F38CCF6E1F3EC12C006F493B /* firstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = firstViewController.swift; sourceTree = "<group>"; };
 		F39596C31F231D81003DCE52 /* SwiftTabBarCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTabBarCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F39596C61F231D81003DCE52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F39596C81F231D81003DCE52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 		F39596C51F231D81003DCE52 /* SwiftTabBarCollection */ = {
 			isa = PBXGroup;
 			children = (
+				F38CCF6E1F3EC12C006F493B /* firstViewController.swift */,
 				F39596C61F231D81003DCE52 /* AppDelegate.swift */,
 				F39596C81F231D81003DCE52 /* ViewController.swift */,
 				F39596CA1F231D81003DCE52 /* Main.storyboard */,
@@ -143,6 +146,7 @@
 				F39596C91F231D81003DCE52 /* ViewController.swift in Sources */,
 				F39596D91F231EF9003DCE52 /* CustomCell.swift in Sources */,
 				F39596C71F231D81003DCE52 /* AppDelegate.swift in Sources */,
+				F38CCF6F1F3EC12C006F493B /* firstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +310,7 @@
 				F39596D71F231D81003DCE52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

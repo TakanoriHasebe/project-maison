@@ -10,15 +10,9 @@ import UIKit
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UIGestureRecognizerDelegate{
     
-    @IBOutlet weak var collectionView: UICollectionView!
-    
-    /* PopUpに対するOutlet */
     @IBOutlet var addItemView: UIView!
     
-    @IBOutlet weak var visualEffectView: UIVisualEffectView!
-    
-    /* blurEffectの制御 */
-    var effect:UIVisualEffect!
+    @IBOutlet weak var collectionView: UICollectionView!
     
     var images = ["one", "two", "three", "four", "five", "six"]
 
@@ -36,13 +30,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         lpgr.delegate = self
         self.collectionView.addGestureRecognizer(lpgr)
         
-        self.collectionView.isUserInteractionEnabled = true
-        
-        /* コピペ */
-        // effect = visualEffectView.effect
-        // visualEffectView.effect = nil
-        
+        /* PopUpView */
         addItemView.layer.cornerRadius = 5
+        
+        self.collectionView.isUserInteractionEnabled = true
         
     }
     
@@ -71,22 +62,21 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                 /************ コピペ ***********/
                 /* addItemViewの初期設定 */
                 addItemView.center = self.view.center
-                // self.view.addSubview(addItemView)
                 /************ コピペ ***********/
                 
                 /************ コピペ ***********/
                 /* Animationの設定 */
-                addItemView.transform = CGAffineTransform.init(scaleX: 1.3, y: 1.3)
+                // self.backgoundImg.addBlurEffect() /* Extensionを用いたBlur */
+                self.collectionView.addBlurEffect()
+                addItemView.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
                 addItemView.alpha = 0
                 
                 UIView.animate(withDuration: 0.4) {
-                    self.visualEffectView.effect = self.effect
                     self.view.addSubview(self.addItemView)
                     self.addItemView.alpha = 1
                     self.addItemView.transform = CGAffineTransform.identity
                 }
                 /************ コピペ ***********/
-                
                 
                 print(index.row)
                 
@@ -121,5 +111,49 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
     }
     
+    /* BlurとPopUpViewを取り外す */
+    @IBAction func removeBlurEffect(_ sender: Any) {
+        
+        UIView.animate(withDuration: 0.3, animations: {
+            self.addItemView.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
+            self.addItemView.alpha = 0
+        }) { (success:Bool) in
+            
+            self.collectionView.removeBlurEffect()
+            self.addItemView.removeFromSuperview()
+            
+        }
+
+        
+    }
+    
 }
+
+/************ コピペ ***********/
+extension UICollectionView
+{
+    
+    func addBlurEffect(){
+        
+        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.extraLight)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        blurEffectView.frame = self.bounds
+        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        self.addSubview(blurEffectView)
+        
+    }
+    
+    func removeBlurEffect() {
+        // UIImageViewのsubviewすべてに対して、
+        self.subviews.forEach{
+            // 型をUIVisualEffectViewにキャストできる、すなわち型がUIVisualEffectViewであるsubviewは、
+            if let effectView = $0 as? UIVisualEffectView {
+                // superviewから取り外す。
+                effectView.removeFromSuperview()
+            }
+        }
+    }
+}
+/************ コピペ ***********/
+
 
