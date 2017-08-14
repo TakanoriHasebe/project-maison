@@ -14,7 +14,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var images = ["one", "two", "three", "four", "five", "six"]
+    var images = ["one", "two", "three", "four", "five", "six", "person11", "person12", "person13", "person14", "person15", "person16", "person17", "person18", "person19", "person20", "person21"]
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -126,6 +128,14 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 
         
     }
+    
+    /* CollctionViewのcellを複数選択する */
+    @IBAction func multiSelection(_ sender: Any) {
+        
+        collectionView.allowsMultipleSelection = true
+    
+    }
+    
     
 }
 

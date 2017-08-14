@@ -15,8 +15,6 @@ class firstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // backgroundIMG.addBlurEffect()
-        
     }
 
     override func didReceiveMemoryWarning() {

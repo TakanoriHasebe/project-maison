@@ -65,6 +65,9 @@
                                 <rect key="frame" x="329" y="28" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <state key="normal" image="multi-person"/>
+                                <connections>
+                                    <action selector="multiSelection:" destination="Hip-yc-Tu8" eventType="touchUpInside" id="lDw-M0-J6b"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
