@@ -36,9 +36,30 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         cell.myButton.setBackgroundImage(UIImage(named: images[indexPath.row])!, for: UIControlState.normal)
         cell.myButton.contentMode = .scaleToFill
         
+        if indexPath.row == 1{
+            cell.layer.borderColor = UIColor.cyan.cgColor
+            cell.layer.borderWidth = 1.5
+        }
+        
         return cell
+    }
+    
+    
+    
+    @IBAction func multiPerson(_ sender: Any) {
+        
+        func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+            
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CustomCell", for: indexPath) as! CustomCell
+            
+            cell.layer.borderColor = UIColor.cyan.cgColor
+            cell.layer.borderWidth = 1.5
+            
+            
+        }
         
     }
+    
 
 }
 
