@@ -25,6 +25,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         collectionView.delegate = self
         collectionView.dataSource = self
         
+        /* Press */
+        let press = UITapGestureRecognizer(target: self, action: #selector(ViewController.handlePress(_:)))
+        press.delaysTouchesBegan = true
+        press.delegate = self
+        press.cancelsTouchesInView = false
+        self.collectionView.addGestureRecognizer(press)
+        
         /* LongPress */
         let lpgr = UILongPressGestureRecognizer(target: self, action: #selector(ViewController.handleLongPress(_:)))
         lpgr.minimumPressDuration = 0.3
@@ -39,6 +46,49 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
     }
     
+    /* Tapの時の動作 */
+    func handlePress(_ gestureReconizer: UITapGestureRecognizer){
+        
+        /*
+        if gestureReconizer.state != UIGestureRecognizerState.ended {
+            return
+        }*/
+        
+        let p = gestureReconizer.location(in: self.collectionView)
+        let indexPath = self.collectionView.indexPathForItem(at: p)
+        
+        if let index = indexPath {
+            
+            var cell = collectionView.cellForItem(at: index)
+            
+            let transform = self.collectionView.transform
+            UICollectionView.animate(withDuration: 0.0, animations: {
+                cell?.transform = CGAffineTransform(scaleX: 0.98, y: 0.98)
+            })
+            
+            if (gestureReconizer.state == UIGestureRecognizerState.ended) {
+                
+                print("Tap")
+                print(index.row)
+                
+                /********************* 複数選択のボタンが押された時にif文でonにする ************************/
+                /********************* index.rowを配列に追加 ************************/
+                /********************* 再度cellが押された場合に元に戻す ************************/
+                cell?.layer.borderColor = UIColor.cyan.cgColor
+                cell?.layer.borderWidth = 1.5
+                /********************* 再度cellが押された場合に元に戻す ************************/
+                /********************* index.rowを配列に追加 ************************/
+                /********************* 複数選択のボタンが押された時にif文でonにする ************************/
+                
+                cell?.transform = CGAffineTransform.identity
+            }
+            
+        } else {
+            print("Tap")
+            print("Could not find index path")
+        }
+        
+    }
     
     /* LongPressの時の動作 */
     func handleLongPress(_ gestureReconizer: UILongPressGestureRecognizer) {
