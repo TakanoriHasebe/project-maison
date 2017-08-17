@@ -66,7 +66,7 @@
                                 <autoresizingMask key="autoresizingMask"/>
                                 <state key="normal" image="multi-person"/>
                                 <connections>
-                                    <action selector="multiSelection:" destination="Hip-yc-Tu8" eventType="touchUpInside" id="lDw-M0-J6b"/>
+                                    <action selector="multiperson:" destination="Hip-yc-Tu8" eventType="touchUpInside" id="yUC-Ua-KJV"/>
                                 </connections>
                             </button>
                         </subviews>

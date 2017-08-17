@@ -10,13 +10,17 @@ import UIKit
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UIGestureRecognizerDelegate{
     
+    /* PopUpView */
     @IBOutlet var addItemView: UIView!
     
+    /* ColectionView */
     @IBOutlet weak var collectionView: UICollectionView!
     
+    /* 複数選択の可否 */
+    var multiPersonJudge = false
+    var multiPersonJudgeCount = 0
+    
     var images = ["one", "two", "three", "four", "five", "six", "person11", "person12", "person13", "person14", "person15", "person16", "person17", "person18", "person19", "person20", "person21"]
-    
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,14 +75,18 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                 print("Tap")
                 print(index.row)
                 
-                /********************* 複数選択のボタンが押された時にif文でonにする ************************/
+                /********************* 複数選択のボタンが押された時にif文でonにする Done ************************/
+                /********************* 複数選択のボタンが複数回押された時にlayer.borderColorを削除 ************************/
                 /********************* index.rowを配列に追加 ************************/
                 /********************* 再度cellが押された場合に元に戻す ************************/
-                cell?.layer.borderColor = UIColor.cyan.cgColor
-                cell?.layer.borderWidth = 1.5
+                if (self.multiPersonJudge == true){
+                    cell?.layer.borderColor = UIColor.cyan.cgColor
+                    cell?.layer.borderWidth = 1.5
+                }
                 /********************* 再度cellが押された場合に元に戻す ************************/
                 /********************* index.rowを配列に追加 ************************/
-                /********************* 複数選択のボタンが押された時にif文でonにする ************************/
+                /********************* 複数選択のボタンが複数回押された時にlayer.borderColorを削除 ************************/
+                /********************* 複数選択のボタンが押された時にif文でonにする Done ************************/
                 
                 cell?.transform = CGAffineTransform.identity
             }
@@ -179,11 +187,23 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
     }
     
-    /* CollctionViewのcellを複数選択する */
-    @IBAction func multiSelection(_ sender: Any) {
+    /* 複数選択を実施するボタンの設定 */
+    @IBAction func multiperson(_ sender: Any) {
         
-        collectionView.allowsMultipleSelection = true
-    
+        // print(self.multiPersonJudgeCount)
+        self.multiPersonJudgeCount += 1
+        
+        if (self.multiPersonJudgeCount%2 != 0){
+            /* 複数選択が可能 */
+            self.multiPersonJudge = true
+            // print(self.multiPersonJudge)
+        }else{
+            /* 複数選択が不可能 */
+            self.multiPersonJudge = false
+            print(self.multiPersonJudge)
+            
+        }
+        
     }
     
     
