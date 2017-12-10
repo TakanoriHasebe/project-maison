@@ -36,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         // コピペ
         /* Firebaseにログインしていたら、次の画面に移動する。*/
         /* 位置情報の取得もスキップ */
-        
+        /*
         if (FIRAuth.auth()?.currentUser) != nil {
          
         /*Firebaseにログインしていたら、次の画面に移動する。*/
@@ -57,7 +57,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         } else {
          
          
-        }
+        }*/
         
         return true
     }
