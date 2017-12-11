@@ -5,4 +5,4 @@
 `SwiftAdaptiveUILabel` 設定された文章の長さによって、UILabelの長さが変わる  
 `multipleCollectionView` RecommendPersonViewの基本形。Tap・LongPressなどの動作はついていない。  
 AutoLayoutに対応するためには、CollectionViewのCellの大きさ・並び方について考える必要性がある。    
-
+`SwiftBlurEffect` BlurEffectをコードで書いている。  
