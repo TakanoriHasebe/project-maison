@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,10 +22,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zzA-w4-DfP">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zzA-w4-DfP">
                                 <rect key="frame" x="0.0" y="71" width="375" height="596"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zzA-w4-DfP" secondAttribute="height" multiplier="375:596" id="5kx-nw-tkJ"/>
+                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yCt-ps-T9E">
                                     <size key="itemSize" width="100" height="100"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -51,9 +54,8 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H02-BH-bYO">
-                                <rect key="frame" x="319" y="28" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H02-BH-bYO">
+                                <rect key="frame" x="319" y="0.0" width="40" height="68"/>
                                 <state key="normal" image="check"/>
                                 <connections>
                                     <action selector="multiPerson:" destination="BYZ-38-t0r" eventType="touchUpInside" id="moS-KW-1VR"/>
@@ -61,6 +63,14 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zzA-w4-DfP" secondAttribute="trailing" id="2Wg-Iu-KJp"/>
+                            <constraint firstItem="H02-BH-bYO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ho7-LM-BAT"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zzA-w4-DfP" secondAttribute="bottom" id="U4f-u1-mL2"/>
+                            <constraint firstItem="zzA-w4-DfP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="WCU-TP-Zy4"/>
+                            <constraint firstItem="zzA-w4-DfP" firstAttribute="top" secondItem="H02-BH-bYO" secondAttribute="bottom" constant="3" id="bQX-Ql-10X"/>
+                            <constraint firstItem="zzA-w4-DfP" firstAttribute="top" secondItem="H02-BH-bYO" secondAttribute="bottom" constant="3" id="rbx-9j-0no"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="zzA-w4-DfP" id="R8A-t4-Fxr"/>

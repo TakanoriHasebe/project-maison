@@ -35,10 +35,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         cell.myButton.setBackgroundImage(UIImage(named: images[indexPath.row])!, for: UIControlState.normal)
         cell.myButton.contentMode = .scaleToFill
-        
-        if indexPath.row == 1{
-            cell.layer.borderColor = UIColor.cyan.cgColor
-            cell.layer.borderWidth = 1.5
+    
+        if indexPath.row == 2{ /* ここで指定したCellの周りに色を付与している */
+            cell.layer.borderColor = UIColor.cyan.cgColor /* Cellの周りの色を変更する */
+            cell.layer.borderWidth = 1.5 /* Cellの周りの色の太さの変更 */
         }
         
         return cell
