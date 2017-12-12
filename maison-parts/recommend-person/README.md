@@ -10,7 +10,7 @@ AutoLayoutに対応するためには、CollectionViewのCellの大きさ・並�
 PopUpViewのDoneボタンを押すことで、PopUpViewとBlurを消すことができる。   
 `RecommedPersonMain` Firebaseから画像を読み込み、RecommendPersonの最初のViewに表示するというところまでを再現し  
 タップするとプロフィールが表示される。長押しの動作についてはまだ付与していない。  
-また、複数選択のボタンの配置も行っていない。 
+また、複数選択のボタンの配置も行っていない。   
 `SwiftBlurEffectCollection` 別のCollectionViewからRecommendPersonに遷移。  
 遷移してからはtap・longpressに対応指定ないが、人の複数選択はできるようになっている。  
 しかし、複数選択を解除するか・しないかというところには対応していない。   
