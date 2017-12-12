@@ -14,3 +14,6 @@ PopUpViewのDoneボタンを押すことで、PopUpViewとBlurを消すことが
 `SwiftBlurEffectCollection` 別のCollectionViewからRecommendPersonに遷移。  
 遷移してからはtap・longpressに対応指定ないが、人の複数選択はできるようになっている。  
 しかし、複数選択を解除するか・しないかというところには対応していない。   
+`AutoLayoutAdaptiveLabel` AdaptiveLabelにAuotLayoutを追加したもの 
+このプログラムでは、プロフィールとプロフィールの下のボタンのところに空白ができる。  
+ 
