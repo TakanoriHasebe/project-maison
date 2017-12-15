@@ -50,7 +50,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPi-Un-8pn">
-                                                <rect key="frame" x="15" y="634.66666666666663" width="125" height="37.333333333333371"/>
+                                                <rect key="frame" x="15" y="634.66666666666663" width="125" height="37.666666666666629"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="jPi-Un-8pn" secondAttribute="height" multiplier="47:14" id="gRf-VX-KmT"/>
                                                 </constraints>

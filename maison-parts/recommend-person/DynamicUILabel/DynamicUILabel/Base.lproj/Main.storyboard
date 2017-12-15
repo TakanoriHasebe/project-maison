@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,13 +16,13 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DynamicUILabel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="H9n-2n-KUp">
-                                <rect key="frame" x="16" y="88" width="343" height="148"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X7L-3g-kRv">
+                                <rect key="frame" x="15" y="93.999999999999986" width="345" height="142.66666666666663"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="H9n-2n-KUp" secondAttribute="height" multiplier="343:148" id="9S0-Fl-nlU"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" secondItem="X7L-3g-kRv" secondAttribute="height" multiplier="343:142" id="UgN-Vz-LvB"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -31,20 +31,19 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H9n-2n-KUp" secondAttribute="trailing" constant="16" id="Od0-6p-nNh"/>
-                            <constraint firstItem="H9n-2n-KUp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="68" id="TaE-fq-Y8d"/>
-                            <constraint firstItem="H9n-2n-KUp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="X27-Wh-kIZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="X7L-3g-kRv" secondAttribute="trailing" constant="15" id="JmJ-Qp-sqN"/>
+                            <constraint firstItem="X7L-3g-kRv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Lhy-uR-AXL"/>
+                            <constraint firstItem="X7L-3g-kRv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="S5a-Yv-pP4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="heightConstrainsts" destination="8bC-Xf-vdC" id="Jex-7K-23F"/>
-                        <outlet property="textLabel" destination="H9n-2n-KUp" id="r2N-EA-pzZ"/>
+                        <outlet property="textLabel" destination="X7L-3g-kRv" id="ZDL-ag-MD5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+            <point key="canvasLocation" x="-79.200000000000003" y="133.74384236453201"/>
         </scene>
     </scenes>
 </document>

@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  DynamicUILabel
 //
-//  Created by Takanori.H on 2017/12/12.
+//  Created by Takanori.H on 2017/12/15.
 //  Copyright © 2017年 Takanori.H. All rights reserved.
 //
 
