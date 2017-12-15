@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var textLabel: UILabel!
     var count = 0
     
-    let items = ["A simple sentence has only one clause", "The children were laughing.", "This is a pen.", "A complex sentence has a main clause and one or more adverbial clauses. Adverbial clauses usually come after the main clause"]
+    let items = ["Aside from the activities I've listed, there are plenty of other seasonal events that spring up quickly around here, so please keep an eye out for those, and hopefully you can help publicize them as they come up. For more specific information about the events listed, please contact the respective facilities. Here's a list of community resources in the Fountain Hills area. In the Fountain Hills downtown area we have a few centers that serve the general public. I hope you will include that informaIn the Fountain Hills downtown area we have a few centers that serve the general public. I hope you will include that informaIn the Fountain Hills downtown area we have a few centers that serve the at", "The children were laughing.", "This is a pen.", "A complex sentence has a main clause and one or more adverbial clauses. Adverbial clauses usually come after the main clause"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
