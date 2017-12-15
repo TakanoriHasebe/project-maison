@@ -16,4 +16,4 @@ PopUpViewのDoneボタンを押すことで、PopUpViewとBlurを消すことが
 しかし、複数選択を解除するか・しないかというところには対応していない。   
 `AutoLayoutAdaptiveLabel` AdaptiveLabelにAuotLayoutを追加したもの 
 このプログラムでは、プロフィールとプロフィールの下のボタンのところに空白ができる。  
- 
+`DynamicUILabel` ラベルを文章の長さに合わせて動的に変更する。  
